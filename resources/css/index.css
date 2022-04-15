@@ -8,7 +8,7 @@ html,body {
 /* GRID */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1.2fr 1.5fr;
+    grid-template-columns: 1fr 1.3fr 1.5fr;
     grid-template-rows: .7fr 4fr 3.5fr 3fr 3fr 3fr;
     grid-template-areas: 
     "main main header"
@@ -23,7 +23,7 @@ html,body {
 main {
     grid-area: main;
     background-color: #fff1e6;
-    height: 70vh;
+    height: 78vh;
 }
 
 section.type-food {
@@ -62,7 +62,6 @@ header {
 
 
 /* Main Intro */
-
 .intro h1, h2 {
     text-transform: uppercase;
 }
@@ -100,185 +99,38 @@ header {
     color: #495057;
 }
 
- .burger, 
+.burger, 
 .spaghetti,
 .steak,
 .sushi,
 .crab,
 .taco {
     position: relative;
+    left: 50px;
+    padding: 15px 20px;
     top: 30%;
     filter: drop-shadow(.5px .5px .5px black);
+    height: 30px;
+    width: 30px;
 }
 
+.intro a {
+    text-decoration: none;
+}
 
 /* Header */
-
 .nav a {
     text-decoration: none !important;
-}
-
-.nav li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 15px 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* HEADER */
-/* .header {
-    position: absolute;
-    top: 0%;
-    width: 100%;
+    color: #495057;
     text-transform: uppercase;
-    text-align: center;
-    font-family: sans-serif;
-    letter-spacing: 3px;
-    background-color: #fff1e6;
-    color: #495057;
-} */
-
-/* .burger, 
-.spaghetti,
-.steak,
-.sushi,
-.crab,
-.taco {
-    position: absolute;
-    top: 30%;
-    filter: drop-shadow(.5px .5px .5px black);
-}
-
-.burger {
-   left: 5%;
-}
-
-.spaghetti {
-    left: 15%;
-}
-
-.steak {
-    left: 25%;
-}
-
-.sushi {
-    right: 5%;
-}
-
-.crab {
-    right: 15%;
-}
-
-.taco {
-    right: 25%;
-}
-
-.header hr {
-    width: 30%;
-    height: 2px;
-    background-color: #B7B7A4;
-    border: none;
-} */
-
-/* NAVBAR */
-/* .nav {
-    position: absolute;
-    width: 100%;
-    height: 35%;
-    background-color: #B7B7A4;
-}
-
-.nav a {
-    text-decoration: none;
-    color: #495057;
-}
-
-.nav ul {
-    display: flex;
-    justify-content:space-evenly;
 }
 
 .nav li {
     list-style-type: none;
     display: inline-block;
-    font-size: 80%;
-} */
-
-/* INTRODUCTION  */
-/* .intro {
-    position: fixed;
-    top: 30%;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 15px 30px;
+    position: relative;
+    left: 40px;
 }
 
-.intro h2 {
-    position: absolute;
-    left: 7%;
-    top: 55px;
-    font-size: 35px;
-    letter-spacing: 1rem;
-    color: #495057
-}
-
-.restaurant {
-    position: absolute;
-    left: 3.5%;
-    top: 85px;
-    letter-spacing: -9px;
-    font-size: 85px;
-}
-
-.hub {
-    position: absolute;
-    left: 16%;
-    top: 170px;
-    letter-spacing: -10px;
-    font-size: 85px;
-}
-
-.intro hr {
-    position: absolute;
-    left: 6.6%;
-    top: 125px;
-    width: 30%;
-    height: 1px;
-    background-color: black;
-    border: none;
-}
-
-.intro h4 {
-    position: absolute;
-    left: 68%;
-    top: 80px;
-}
-
-.intro p {
-    position: absolute;
-    top: 130px;
-    left: 50%;
-    margin-left: 110px;
-    margin-right: 110px;
-    line-height: 140%;
-    text-transform: none;
-    letter-spacing: 1.5px;
-} */
 
