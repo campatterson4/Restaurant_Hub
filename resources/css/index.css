@@ -2,14 +2,15 @@ html,body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
 }
 
 /* GRID */
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1.3fr 1.5fr;
+    grid-template-columns: 1.2fr 1.2fr 1.5fr;
     grid-template-rows: .7fr 4fr 3.5fr 3fr 3fr 3fr;
+    gap: 7px;
     grid-template-areas: 
     "main main header"
     "main main food-pic"
@@ -18,34 +19,36 @@ html,body {
     "location idk food-pic"
     "location idk food-pic";
     height: 150vh;
+    background-color: #fff1e6;
 }
 
 main {
     grid-area: main;
     background-color: #fff1e6;
-    height: 78vh;
+    height: 73vh;
 }
 
 section.type-food {
     grid-area: type-food;
-    background-color: green;
+    background-color: #A5A58D;
+    width: 100%;
 }
 
 section.price {
     grid-area: price;
-    background: pink;
+    background: #A5A58D;
     height: 55vh;
 }
 
 section.location {
     grid-area: location;
-    background-color: red;
+    background-color: #A5A58D;
     height: 50vh;
 }
 
 section.idk {
     grid-area: idk;
-    background-color: aqua;
+    background-color: #A5A58D;
 }
 
 header {
@@ -128,9 +131,84 @@ header {
 .nav li {
     list-style-type: none;
     display: inline-block;
-    padding: 15px 30px;
+    padding: 20px 30px;
     position: relative;
-    left: 40px;
+    left: 25px;
+}
+
+/* Picker Section */
+.type-food h1,
+.price h1,
+.location h1 {
+    color: #495057;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.type-food hr,
+.price hr,
+.location hr {
+    width: 20%;
+    position: relative;
+    bottom: 10px;
+    height: 1px;
+    background-color: #495057;
+    border: none;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #fff1e6;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #495057; 
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #CB997E;
+    content: '';
+    display: inline-block;
+    visibility: visible;
 }
 
 
+/* Type of Food Section */
+.type-food-radio {
+    position: relative;
+    left: 100px;
+    padding: 50px;
+    font-size: 20px;
+    color: #343a40;
+}
+
+/* Price Section */
+.price-radio {
+    position: relative;
+    left: 110px;
+    top: 5px;
+    padding: 50px;
+    font-size: 20px;
+    color: #343a40;
+}
+
+/* Location Section */
+.location-radio {
+    position: relative;
+    left: 100px;
+    top: 5px;
+    padding: 50px;
+    font-size: 20px;
+    color: #343a40;
+}
