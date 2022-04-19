@@ -14,11 +14,11 @@ html,body {
     grid-template-areas: 
     "main main header"
     "main main food-pic"
-    "type-food price food-pic"
-    "type-food price food-pic"
+    "cuisine price food-pic"
+    "cuisine price food-pic"
     "location idk food-pic"
     "location idk food-pic";
-    height: 150vh;
+    height: 195vh;
     background-color: #fff1e6;
 }
 
@@ -28,10 +28,10 @@ main {
     height: 73vh;
 }
 
-section.type-food {
+section.cuisine {
     grid-area: type-food;
     background-color: #A5A58D;
-    width: 100%;
+    height: 55vh;
 }
 
 section.price {
@@ -43,12 +43,14 @@ section.price {
 section.location {
     grid-area: location;
     background-color: #A5A58D;
-    height: 50vh;
+    height: 55vh;
+    margin-top: -20px;
 }
 
 section.idk {
     grid-area: idk;
     background-color: #A5A58D;
+    height: 55vh;
 }
 
 header {
@@ -61,6 +63,7 @@ header {
     background: url("../images/food.jpg");
     background-size: cover;
     background-position: 50%;
+    height: 97.4%;
 }
 
 
@@ -100,6 +103,7 @@ header {
     left: 75px;
     width: 70%;
     color: #495057;
+    line-height: 25px;
 }
 
 .burger, 
@@ -137,20 +141,22 @@ header {
 }
 
 /* Picker Section */
-.type-food h1,
+.cuisine h1,
 .price h1,
 .location h1 {
     color: #495057;
     text-transform: uppercase;
     text-align: center;
+    position: relative;
+    top: 6%;
 }
 
-.type-food hr,
+.cuisine hr,
 .price hr,
 .location hr {
     width: 20%;
     position: relative;
-    bottom: 10px;
+    top: 4%;
     height: 1px;
     background-color: #495057;
     border: none;
@@ -184,10 +190,11 @@ input[type='radio']:checked:after {
 }
 
 
-/* Type of Food Section */
-.type-food-radio {
+/* Cuisine Section */
+.cuisine-radio {
     position: relative;
-    left: 100px;
+    left: 110px;
+    bottom: 4%;
     padding: 50px;
     font-size: 20px;
     color: #343a40;
@@ -196,8 +203,8 @@ input[type='radio']:checked:after {
 /* Price Section */
 .price-radio {
     position: relative;
-    left: 110px;
-    top: 5px;
+    left: 112px;
+    bottom: 2%;
     padding: 50px;
     font-size: 20px;
     color: #343a40;
@@ -206,9 +213,13 @@ input[type='radio']:checked:after {
 /* Location Section */
 .location-radio {
     position: relative;
-    left: 100px;
-    top: 5px;
+    left: 108px;
+    bottom: 2%;
     padding: 50px;
     font-size: 20px;
     color: #343a40;
 }
+
+
+
+
