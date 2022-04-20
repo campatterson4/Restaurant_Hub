@@ -55,28 +55,29 @@
             <h1>Cuisine</h1>
             <hr>
             <div class="cuisine-radio">
-                <input type="radio" id="italian" name="radio-cuisine" value="Italian">
+                <input type="radio" id="italian" name="radio" value="Italian">
                 <label for="italian">Italian</label>
                 <br>
                 <p></p>
-                <input type="radio" id="american" name="radio-cuisine" value="American">
+                <input type="radio" id="american" name="radio" value="American">
                 <label for="american">American</label>
                 <br>
                 <p></p>
-                <input type="radio" id="mexican" name="radio-cuisine" value="Mexican">
+                <input type="radio" id="mexican" name="radio" value="Mexican">
                 <label for="mexican">Mexican</label>
                 <br>
                 <p></p>
-                <input type="radio" id="asian" name="radio-cuisine" value="Asian">
+                <input type="radio" id="asian" name="radio" value="Asian">
                 <label for="asian">Asian</label>
                 <br>
                 <p></p>
-                <input type="radio" id="seafood" name="radio-cuisine" value="Seafood">
+                <input type="radio" id="seafood" name="radio" value="Seafood">
                 <label for="seafood">Seafood</label>
-                <br>
-                <p></p>
-                <input type="radio" id="surprise" name="radio-cuisine" value="Surprise Me!">
-                <label for="surprise">Surprise Me!</label>
+                <hr class="cuisine-border1"> <!-- top left line -->
+                <hr class="cuisine-border2"> <!-- top right line -->
+                <hr class="cuisine-border3"> <!-- vertical right line -->
+                <hr class="cuisine-border4"> <!-- bottom line -->
+                <hr class="cuisine-border5"> <!-- vertical left line -->
             </div>
         </section>
         </form>
@@ -86,24 +87,25 @@
             <h1>Price Range</h1>
             <hr>
             <div class="price-radio">
-                <input type="radio" id="one-$" name="radio-price" value="$">
+                <input type="radio" id="one-$" name="radio" value="$">
                 <label for="one-$">$</label>
                 <br>
                 <p></p>
-                <input type="radio" id="two-$$" name="radio-price" value="$$">
+                <input type="radio" id="two-$$" name="radio" value="$$">
                 <label for="two-$$">$$</label>
                 <br>
                 <p></p>
-                <input type="radio" id="three-$$$" name="radio-price" value="$$$">
+                <input type="radio" id="three-$$$" name="radio" value="$$$">
                 <label for="three-$$$">$$$</label>
                 <br>
                 <p></p>
-                <input type="radio" id="four-$$$$" name="radio-price" value="$$$$">
+                <input type="radio" id="four-$$$$" name="radio" value="$$$$">
                 <label for="four-$$$$">$$$$</label>
-                <br>
-                <p></p>
-                <input type="radio" id="surprise" name="radio-price" value="Surprise Me!">
-                <label for="surprise">Surprise Me!</label>
+                <hr class="price-border1"> <!-- top left line -->
+                <hr class="price-border2"> <!-- top right line -->
+                <hr class="price-border3"> <!-- vertical right line -->
+                <hr class="price-border4"> <!-- bottom line -->
+                <hr class="price-border5"> <!-- vertical left line -->
             </div>
         </section>
         </form>
@@ -113,17 +115,18 @@
             <h1>Location</h1>
             <hr>
             <div class="location-radio">
-                <input type="radio" id="dallas" name="radio-location" value="Dallas">
+                <input type="radio" id="dallas" name="radio" value="Dallas">
                 <label for="dallas">Dallas</label>
                 <br>
-                <p>
-                </p>
-                <input type="radio" id="fort-worth" name="radio-location" value="Fort Worth">
-                <label for="fort-worth">Fort Worth</label>
-                <br>
                 <p></p>
-                <input type="radio" id="surprise" name="radio-surprise" value="Surprise Me!">
-                <label for="surprise">Surprise Me!</label>
+                <input type="radio" id="fort-worth" name="radio" value="Fort Worth">
+                <label for="fort-worth">Fort Worth</label>
+                <hr class="location-border1"> <!-- top left line -->
+                <hr class="location-border2"> <!-- top right line -->
+                <hr class="location-border3"> <!-- vertical right line -->
+                <hr class="location-border4"> <!-- bottom right line -->
+                <hr class="location-border5"> <!-- bottom left line -->
+                <hr class="location-border6"> <!-- vertical left line -->
             </div>
         </section>
         </form>
@@ -133,14 +136,18 @@
             idk
         </section>
         </form>
+        <button onclick="validateForm()"> Submit
+        </button>
 
         <div class="food-pic">
-
         </div>
 
 
 
 
+        <script src="./index.js">
+
+        </script>
 
 
 

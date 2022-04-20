@@ -140,6 +140,7 @@ header {
     left: 25px;
 }
 
+
 /* Picker Section */
 .cuisine h1,
 .price h1,
@@ -193,7 +194,7 @@ input[type='radio']:checked:after {
 /* Cuisine Section */
 .cuisine-radio {
     position: relative;
-    left: 110px;
+    left: 105px;
     bottom: 4%;
     padding: 50px;
     font-size: 20px;
@@ -203,7 +204,7 @@ input[type='radio']:checked:after {
 /* Price Section */
 .price-radio {
     position: relative;
-    left: 112px;
+    left: 130px;
     bottom: 2%;
     padding: 50px;
     font-size: 20px;
@@ -213,7 +214,7 @@ input[type='radio']:checked:after {
 /* Location Section */
 .location-radio {
     position: relative;
-    left: 108px;
+    left: 25%;
     bottom: 2%;
     padding: 50px;
     font-size: 20px;
@@ -222,4 +223,145 @@ input[type='radio']:checked:after {
 
 
 
+/* Submit Button */
+button {
+    position: relative;
+    left: 158px;
+    bottom: 125px;
+    background: #CB997E;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    height: 50px;
+    width: 100px;
+   }
+   
+   button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+   button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
 
+
+   /* Borders for Form */
+   .cuisine .cuisine-border1 {
+       position: relative;
+       right: 62%;
+       bottom: 263px;
+   }
+
+   .cuisine .cuisine-border2 {
+       position: relative;
+       right: 13px;
+       bottom: 273px;
+   }
+
+   .cuisine .cuisine-border3 {
+       position: relative;
+       transform: rotate(90deg);
+       width: 100%;
+       bottom: 126px;
+       left: 18.3px;
+   }
+   
+   .cuisine .cuisine-border4 {
+       position: relative;
+       width: 78%;
+       right: 105px;
+       top: 21px;
+   }
+
+   .cuisine .cuisine-border5 {
+       position: relative;
+       transform: rotate(90deg);
+       width: 100%;
+       right: 228px;
+       bottom: 149px;
+   }
+
+   .price .price-border1 {
+       position: relative;
+       width: 15%;
+       right: 76%;
+       bottom: 227px
+   }
+
+   .price .price-border2 {
+       position: relative;
+       width: 15%;
+       bottom: 237px;
+       right: 6%;
+   }
+
+   .price .price-border3 {
+       position: relative;
+       transform: rotate(90deg);
+       width: 100%;
+       bottom: 90px;
+       left: 1.5%;
+   }
+
+   .price .price-border4 {
+       position: relative;
+       width: 84.6%;
+       top: 57px;
+       right: 41%
+   }
+
+   .price .price-border5 {
+       position: relative;
+       transform: rotate(90deg);
+       width: 100%;
+       right: 264px;
+       bottom: 113px
+   }
+
+   .location .location-border1 {
+       position: relative;
+       bottom: 140px;
+       right: 207px;
+   }
+
+   .location .location-border2 {
+       position: relative;
+       bottom: 151.5px;
+       right: 3px;
+   }
+
+   .location .location-border3 {
+       position: relative;
+       transform: rotate(90deg);
+       width: 80%;
+       bottom: 35.7px;
+       left: 29px;
+   }
+
+   .location .location-border4 {
+       position: relative;
+       width: 19%;
+       top: 79px;
+       right: 2px;
+   }
+
+   .location .location-border5 {
+       position: relative;
+       width: 21%;
+       top: 68px;
+       right: 206px;
+   }
+
+   .location .location-border6 {
+       position: relative;
+       transform: rotate(90deg);
+       width: 80%;
+       right: 239px;
+       bottom: 69px
+   }
