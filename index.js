@@ -1,6 +1,12 @@
+const btn = document.getElementById('button')
+btn.addEventListener("click", valid);
+btn.addEventListener("click", oneDollar);
+btn.addEventListener("click", twoDollar);
+
+
 // Taking Input from Radio Buttons 
 
-function fn1() {
+function valid() {
     const italian = document.getElementById('italian');
     const american = document.getElementById('american');
     const mexican = document.getElementById('mexican');
@@ -51,9 +57,27 @@ function fn1() {
     }
 };
 
+function oneDollar() { // checking if dallas, italian, and one $ was checked and randomizes a restaurant
+    const italian = document.getElementById('italian'); 
+    const one = document.getElementById('one');  
+    const dallas = document.getElementById('dallas');
 
+    const randomNumber = Math.floor(Math.random() * 5)
 
-function fn1() {
+    if (randomNumber === 1 && dallas.checked === true && italian.checked && one.checked) {
+        alert("Go to Roma's Pizza & Italian!")
+    } else if (randomNumber === 2 && dallas.checked === true && italian.checked && one.checked) {
+        alert('Go to Italia Express!') 
+    } else if (randomNumber === 3 && dallas.checked === true && italian.checked && one.checked) {
+        alert("Go to Franki's Pizza & Pasta!")
+    } else if(randomNumber === 4 && dallas.checked === true && italian.checked && one.checked) {
+        alert('Go to Bellatrino Pizzeria!')
+    } else {
+        null
+    }
+};
+
+function twoDollar() { // checking if dallas, italian, and two $$ was checked and randomizes a restaurant
     const italian = document.getElementById('italian');       // add more info to the results
     const two = document.getElementById('two');               // ex. address & hours
     const dallas = document.getElementById('dallas');
@@ -62,7 +86,7 @@ function fn1() {
     
     if (randomNumber === 1 && dallas.checked === true && italian.checked === true && two.checked) {
         alert('Go to Nonna!')
-    } else if (randomNumber === 2 && dallas.checked === true && italian.checked === true) {
+    } else if (randomNumber === 2 && dallas.checked === true && italian.checked === true && two.checked) {
         alert('Go to North Italia!') 
     } else if (randomNumber === 3 && dallas.checked === true && italian.checked === true && two.checked) {
         alert('Go to Taverna!') 
@@ -71,5 +95,4 @@ function fn1() {
     } else {
         null
     }
-
-}
+};
