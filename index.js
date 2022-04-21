@@ -1,32 +1,52 @@
-// Validating Radio Buttons 
+// Taking Input from Radio Buttons 
 
-// function validateForm() {
-//     var radios = document.getElementsByName("radio-location");
-//     var formValid = false;
+function fn1() {
+    const italian = document.getElementById('italian');
+    const american = document.getElementById('american');
+    const mexican = document.getElementById('mexican');
+    const seafood = document.getElementById('seafood');
+    const asian = document.getElementById('asian');
 
-//     var i = 0;
-//     while (!formValid && i < radios.length) {
-//         if (radios[i].checked) formValid = true;
-//         i++;        
-//     }
 
-//     if (!formValid) alert("Please select a location!");
-//     console.log(formValid)
-//     return formValid; 
-// }
+    if(italian.checked === true) {
+        null
+    } else if(american.checked === true) {
+        null
+    } else if(mexican.checked === true) {
+        null
+    } else if(seafood.checked === true) {
+        null
+    } else if(asian.checked === true) {
+        null
+    } else {
+        alert('Please choose a cuisine!');
+    }
 
-// function validateForm() {
-//     var radios = document.getElementsByName("radio-cuisine");
-//     var formValid = false;
+    const one = document.getElementById('one');
+    const two = document.getElementById('two');
+    const three = document.getElementById('three');
+    const four = document.getElementById('four');
 
-//     var i = 0;
-//     while (!formValid && i < radios.length) {
-//         if (radios[i].checked) formValid = true;
-//         i++;        
-//     }
+    if(one.checked === true) {
+        null
+    } else if(two.checked === true) {
+        null
+    } else if(three.checked === true) {
+        null
+    } else if(four.checked === true) {
+        null
+    } else {
+        alert('Please choose a price range!')
+    }
 
-//     if (!formValid) alert("Please select a cuisine!");
-//     console.log(formValid)
-//     return formValid; 
-// }
+    const dallas = document.getElementById('dallas');
+    const fortWorth = document.getElementById('fort-worth');
 
+    if(dallas.checked === true) {
+        null
+    } else if(fortWorth.checked === true) {
+        null
+    } else {
+        alert('Please choose a location!')
+    }
+}
