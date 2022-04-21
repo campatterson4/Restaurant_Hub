@@ -49,4 +49,27 @@ function fn1() {
     } else {
         alert('Please choose a location!')
     }
+};
+
+
+
+function fn1() {
+    const italian = document.getElementById('italian');       // add more info to the results
+    const two = document.getElementById('two');               // ex. address & hours
+    const dallas = document.getElementById('dallas');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+    
+    if (randomNumber === 1 && dallas.checked === true && italian.checked === true && two.checked) {
+        alert('Go to Nonna!')
+    } else if (randomNumber === 2 && dallas.checked === true && italian.checked === true) {
+        alert('Go to North Italia!') 
+    } else if (randomNumber === 3 && dallas.checked === true && italian.checked === true && two.checked) {
+        alert('Go to Taverna!') 
+    } else if (randomNumber === 4 && dallas.checked === true && italian.checked === true && two.checked) {
+        alert('Go to Amore Italian Restaurant!')
+    } else {
+        null
+    }
+
 }
