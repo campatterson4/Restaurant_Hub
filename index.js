@@ -127,11 +127,14 @@ function dallasItalian$$$$() {
     const randomNumber = Math.floor(Math.random() * 4)
 
     if (randomNumber === 1 && dallas.checked === true && italian.checked == true && four.checked === true) {
-        alert("\n Go to Saint Rocco's New York Italian! \n \n 3011 Gulden Lane #100, Dallas, TX 75212 \n \n Hours: \n Mon: Closed \n Tues-Thurs & Sun: 5PM-9PM \n Fri-Sat: 5PM-10PM")
+        // alert("\n Go to Saint Rocco's New York Italian! \n \n 3011 Gulden Lane #100, Dallas, TX 75212 \n \n Hours: \n Mon: Closed \n Tues-Thurs & Sun: 5PM-9PM \n Fri-Sat: 5PM-10PM")
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Saint Rocco's New York Italian</u>!<br><br><br>3011 Gulden Lane #100, Dallas, TX 75212<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Thurs & Sun: 5PM-9PM<br>Fri-Sat: 5PM-10PM"
     } else if (randomNumber === 2 && dallas.checked === true && italian.checked == true && four.checked === true) {
-        alert('\n Go to Parigi Restaurant! \n \n 3311 Oak Lawn Ave, Dallas, TX 75219 \n \n Hours: \n Mon-Fri: 11:30AM-10PM \n Sat: 10:30AM-10PM \n Sun: 10:30AM-2:30PM')
+        // alert('\n Go to Parigi Restaurant! \n \n 3311 Oak Lawn Ave, Dallas, TX 75219 \n \n Hours: \n Mon-Fri: 11:30AM-10PM \n Sat: 10:30AM-10PM \n Sun: 10:30AM-2:30PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Parigi Restaurant</u>!<br><br><br>3311 Oak Lawn Ave, Dallas, TX 75219<br><br><br>Hours:<br><br>Mon-Fri: 11:30AM-10PM<br>Sat: 10:30AM-10PM<br>Sun: 10:30AM-2:30PM"
     } else if (randomNumber === 3 && dallas.checked === true && italian.checked == true && four.checked === true) {
-        alert('\n Go to Zio Cecio! \n \n 4615 W Lovers Lane, Dallas, TX 75209 \n \n Hours: \n Mon&Sun: Closed \n Tues-Sat: 5PM-10PM')
+        // alert('\n Go to Zio Cecio! \n \n 4615 W Lovers Lane, Dallas, TX 75209 \n \n Hours: \n Mon&Sun: Closed \n Tues-Sat: 5PM-10PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Zio Cecio</u>!<br><br><br>4615 W Lovers Lane, Dallas, TX 75209<br><br><br>Hours:<br><br>Mon&Sun: Closed<br>Tues-Sat: 5PM-10PM"
     } else {
         null
     }
