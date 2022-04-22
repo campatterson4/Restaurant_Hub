@@ -66,13 +66,13 @@ function dallasItalian$() {
     const randomNumber = Math.floor(Math.random() * 5)
 
     if (randomNumber === 1 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert("Go to Roma's Pizza & Italian!")
+        alert("\n Go to Roma's Pizza & Italian! \n \n 7033 Greenville Ave Suite 101, Dallas, TX 75231 \n Hours: Mon: Closed / Tues-Fri: 10AM-10:30PM")
     } else if (randomNumber === 2 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert('Go to Italia Express!') 
+        alert('\n Go to Italia Express! \n \n 111 Continental Ave #300, Dallas, TX 75207 \n Hours: Mon-Fri: 10AM-10PM / Sat: 11AM-4PM / Sun: Closed') 
     } else if (randomNumber === 3 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert("Go to Franki's Pizza & Pasta!")
+        alert("\n Go to Franki's Pizza & Pasta! \n \n 11722 Marsh Lane #202, Dallas, TX 75229 \n Hours: Mon-Thurs: 11AM-9:30PM / Fri-Sat: 11AM-10PM / Sun: 11AM-10PM")
     } else if(randomNumber === 4 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert('Go to Bellatrino Pizzeria!')
+        alert('\n Go to Bellatrino Pizzeria! \n \n 920 S Harwood Street #120, Dallas, TX 75021 \n Hours: Mon-Sun: 11AM-7PM')
     } else {
         null
     }
