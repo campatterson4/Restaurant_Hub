@@ -89,13 +89,13 @@ function dallasItalian$$() {
     const randomNumber = Math.floor(Math.random() * 5)
     
     if (randomNumber === 1 && dallas.checked === true && italian.checked === true && two.checked) {
-        alert('\n Go to Nonna! \n \n 4115 Lomo Alto Drive, Dallas, TX 75219 \n \n Hours: \n Mon-Thurs: 5:30PM-9PM \n Fri: 11:30AM-2PM, 5:30PM-9:30PM \n Sat: 5:30PM-9:30PM \n Sun: Closed')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Nonna</u>!<br><br><br>4115 Lomo Alto Drive, Dallas, TX 75219<br><br><br>Hours:<br><br>Mon-Thurs: 5:30PM-9PM<br>Fri: 11:30AM-2PM, 5:30PM-9:30PM<br>Sat: 5:30PM-9:30PM<br>Sun: Closed"
     } else if (randomNumber === 2 && dallas.checked === true && italian.checked === true && two.checked === true) {
-        alert('\n Go to North Italia! \n \n 2301 N Akard Street #280, Dallas, TX 75201 \n \n Hours: \n Mon-Thurs: 11AM-10PM \n Fri: 11AM-11PM \n Sat: 10AM-11PM \n Sun: 10AM-10PM') 
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>North Italia</u>!<br><br><br>2301 N Akard Street #280, Dallas, TX 75201<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-10PM<br>Fri: 11AM-11PM<br>Sat: 10AM-11PM<br>Sun: 10AM-10PM"
     } else if (randomNumber === 3 && dallas.checked === true && italian.checked === true && two.checked === true) {
-        alert('\n Go to Taverna! \n \n 3312 Knox Street, Dallas, TX 75205 \n \n Hours: \n Mon-Thurs: 11AM-10PM \n Fri: 11AM-11PM \n Sat: 10AM-11PM \n Sun: 10AM-10PM') 
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Taverna</u>!<br><br><br>3312 Knox Street, Dallas, TX 75205<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-10PM<br>Fri: 11AM-11PM<br>Sat: 10AM-11PM<br>Sun: 10AM-10PM"
     } else if (randomNumber === 4 && dallas.checked === true && italian.checked === true && two.checked === true) {
-        alert('\n Go to Amore Italian Restaurant! \n \n 6931 Snider Plaza, Dallas, TX 75205 \n \n Hours: \n Mon-Thurs: 11AM-9PM \n Fri: 11AM-10PM \n Sat: 5PM-10PM \n Sun: Closed')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Amore Italian Restaurant</u>!<br><br><br>6931 Snider Plaza, Dallas, TX 75205<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9PM<br>Fri: 11AM-10PM<br>Sat: 5PM-10PM<br>Sun: Closed"
     } else {
         null
     }
@@ -109,11 +109,11 @@ function dallasItalian$$$() {
     const randomNumber = Math.floor(Math.random() * 4)
 
     if (randomNumber === 1 && dallas.checked === true && italian.checked === true && three.checked === true) {
-        alert('\n Go to Bugatti Ristorante! \n \n 3802 W Northwest Hwy, Dallas, TX 75220 \n \n Hours: \n Sat-Tues: 5PM-10PM \n Weds-Fri: 11AM-2PM, 5PM-10PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Bugatti Ristorante</u>!<br><br><br>3802 W Northwest Hwy, Dallas, TX 75220<br><br><br>Hours:<br><br>Tues-Sat: 5PM-10PM<br>Weds-Fri: 11AM-2PM, 5PM-10PM"
     } else if (randomNumber === 2 && dallas.checked === true && italian.checked === true && three.checked === true) {
-        alert('\n Go to Lucia! \n \n 287 N Bishop Avenue, Dallas, TX 75208 \n \n Hours: \n Mon&Sun: Closed \n Tues-Sat: 5PM-10PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Lucia</u>!<br><br><br>287 N Bishop Avenue, Dallas, TX 75208<br><br><br>Hours:<br><br>Mon&Sun: Closed<br>Tues-Sat: 5PM-10PM"
     } else if (randomNumber === 3 && dallas.checked === true && italian.checked === true && three.checked === true) {
-        alert("\n Go to Adelmo's Ristorante! \n \n 5450 W Lovers Lane #225, Dallas, TX 75209 \n \n Hours: \n Mon: Closed \n Tues-Thurs: 5PM-9:30PM \n Fri-Sun: 5PM-10PM")
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Adelmo's Ristorante</u>!<br><br><br>5450 W Lovers Lane #225, Dallas, TX 75209<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Thurs: 5PM-9:30PM<br>Fri-Sun: 5PM-10PM"
     } else {
         null
     }
@@ -127,13 +127,10 @@ function dallasItalian$$$$() {
     const randomNumber = Math.floor(Math.random() * 4)
 
     if (randomNumber === 1 && dallas.checked === true && italian.checked == true && four.checked === true) {
-        // alert("\n Go to Saint Rocco's New York Italian! \n \n 3011 Gulden Lane #100, Dallas, TX 75212 \n \n Hours: \n Mon: Closed \n Tues-Thurs & Sun: 5PM-9PM \n Fri-Sat: 5PM-10PM")
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Saint Rocco's New York Italian</u>!<br><br><br>3011 Gulden Lane #100, Dallas, TX 75212<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Thurs & Sun: 5PM-9PM<br>Fri-Sat: 5PM-10PM"
     } else if (randomNumber === 2 && dallas.checked === true && italian.checked == true && four.checked === true) {
-        // alert('\n Go to Parigi Restaurant! \n \n 3311 Oak Lawn Ave, Dallas, TX 75219 \n \n Hours: \n Mon-Fri: 11:30AM-10PM \n Sat: 10:30AM-10PM \n Sun: 10:30AM-2:30PM')
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Parigi Restaurant</u>!<br><br><br>3311 Oak Lawn Ave, Dallas, TX 75219<br><br><br>Hours:<br><br>Mon-Fri: 11:30AM-10PM<br>Sat: 10:30AM-10PM<br>Sun: 10:30AM-2:30PM"
     } else if (randomNumber === 3 && dallas.checked === true && italian.checked == true && four.checked === true) {
-        // alert('\n Go to Zio Cecio! \n \n 4615 W Lovers Lane, Dallas, TX 75209 \n \n Hours: \n Mon&Sun: Closed \n Tues-Sat: 5PM-10PM')
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Zio Cecio</u>!<br><br><br>4615 W Lovers Lane, Dallas, TX 75209<br><br><br>Hours:<br><br>Mon&Sun: Closed<br>Tues-Sat: 5PM-10PM"
     } else {
         null
