@@ -166,13 +166,13 @@ function dallasAmerican$$() {
     const randomNumber = Math.floor(Math.random() * 5)
 
     if (randomNumber === 1 && dallas.checked === true && american.checked === true && two.checked === true) {
-        alert("\n Go to Doc B's! \n \n 2021 McKinney Avenue #190, Dallas, TX 75201 \n \n Hours: \n Mon-Thurs: 11AM-9PM \n Fri: 11AM-10PM \n Sat: 12PM-10PM \n Sun: Closed")
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Doc B's</u>!<br><br><br>2021 McKinney Avenue #190, Dallas, TX 75201<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9PM<br>Fri: 11AM-10PM<br>Sat: 12PM-10PM<br>Sun: Closed"
     } else if (randomNumber === 2 && dallas.checked === true && american.checked === true && two.checked === true) {
-        alert('\n Go to The Henry! \n \n 2301 N Akard Street, Dallas, TX 75201 \n \n Hours: \n Sun-Thurs: 8AM-10PM \n Fri-Sat: 8AM-11PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>The Henry</u>!<br><br><br>2301 N Akard Street, Dallas, TX 75201<br><br><br>Hours:<br><br>Sun-Thurs: 8AM-10PM<br>Fri-Sat: 8AM-11PM"
     } else if (randomNumber === 3 && dallas.checked === true && american.checked === true && two.checked === true) {
-        alert('\n Go to Hudson House! \n \n 4448 Lovers Lane, Dallas, TX 75225 \n \n Hours: \n Mon-Thurs: 11AM-9PM \n Fri: 11AM-10PM \n Sat: 10AM-10PM \n Sun: 10AM-9PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Hudson House</u>!<br><br><br>4448 Lovers Lane, Dallas, TX 75225<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9PM<br>Fri: 11AM-10PM<br>Sat: 10AM-10PM<br>Sun: 10AM-9PM"
     } else if (randomNumber === 4 && dallas.checked === true && american.checked === true && two.checked === true) {
-        alert('\n Go to HG Sply Co! \n \n 2008 Greenville Avenue, Dallas, TX 75206 \n \n Hours: \n Mon-Fri: 11AM-12AM \n Sat-Sun: 10AM-12AM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>HG Sply Co</u>!<br><br><br>2008 Greenville Avenue, Dallas, TX 75206<br><br><br>Hours:<br><br>Mon-Fri: 11AM-12AM<br>Sat-Sun: 10AM-12AM"
     } else {
         null
     }
