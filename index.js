@@ -186,16 +186,17 @@ function dallasAmerican$$$() {
     const randomNumber = Math.floor(Math.random() * 6)
 
     if (randomNumber === 1 && dallas.checked === true && american.checked === true && three.checked === true) {
-        alert('\n Go to Hillstone! \n \n 8300 Preston Road, Dallas, TX 75225 \n \n Hours: \n Mon-Thurs: 11AM-9:30PM \n Fri-Sat: 11AM-10PM \n Sun: 11AM-9PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Hillstone</u>!<br><br><br>8300 Preston Road, Dallas, TX 75225<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9:30PM<br>Fri-Sat: 11AM-10PM<br>Sun: 11AM-9PM"
     } else if (randomNumber === 2 && dallas.checked === true && american.checked === true && three.checked === true) {
-        alert('\n Go to Woodlands American Grill! \n \n 6073 Forest Lane, Dallas, TX 75230 \n \n Hours: \n Mon-Fri: 11AM-10PM \n Sat: 10AM-10PM \n Sun: 10AM-9PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Woodlands American Grill</u>!<br><br><br>6073 Forest Lane, Dallas, TX 75230<br><br><br>Hours:<br><br>Mon-Fri: 11AM-10PM<br>Sat: 10AM-10PM<br>Sun: 10AM-9PM"
     } else if (randomNumber === 3 && dallas.checked === true && american.checked === true && three.checked === true) {
-        alert('\n Go to Saint Ann Restaurant & Bar! \n \n 2501 N Harwood Street, Dallas, TX 75201 \n \n Hours: \n Mon-Tues: Closed \n Weds-Thurs: 11AM-3PM, 4PM-10PM \n Fri: 11AM-3PM, 4PM-11PM \n Sat: 10AM-3PM, 4PM-11PM \n Sun: 10AM-5PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Saint Ann Restaurant & Bar</u>!<br><br><br>2501 N Harwood Street, Dallas, TX 75201<br><br><br>Hours:<br><br>Mon-Tues: Closed<br>Weds-Thurs: 11AM-3PM, 4PM-10PM<br>Fri: 11AM-3PM, 4PM-11PM<br>Sat: 10AM-3PM, 4PM-11PM<br>Sun: 10AM-5PM"
     } else if (randomNumber === 4 && dallas.checked === true && american.checked === true && three.checked === true) {
-        alert('\n Go to Up On Knox! \n \n 3230 Knox Street #140, Dallas, TX 75205 \n \n Hours: \n Tues-Thurs: 11AM-10PM \n Fri: 11AM-11PM \n Sat: 9:30AM-11PM \n Sun: 9:30AM-3:30PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Up on Knox</u>!<br><br><br>3230 Knox Street #140, Dallas, TX 75205<br><br><br>Hours:<br><br>Tues-Thurs: 11AM-10PM<br>Fri: 11AM-11PM<br>Sat: 9:30AM-11PM<br>Sun: 9:30AM-3:30PM"
     } else if (randomNumber === 5 && dallas.checked === true && american.checked === true && three.checked === true) {
-        alert('\n Go to The Mercury! \n \n 11909 Preston Road #1418, Dallas, TX 75230 \n \n Hours: \n Mon-Fri: 11AM-10PM \n Sat: 4PM-10PM \n Sun: Closed')
+         document.getElementById('output').innerHTML="<br><br><br>Go to <u>The Mercury</u>!<br><br><br>11909 Preston Road #1418, Dallas, TX 75230<br><br><br>Hours:<br><br>Mon-Fri: 11AM-10PM<br>Sat: 4PM-10PM<br>Sun: Closed"
     } else {
         null
     }
 };
+

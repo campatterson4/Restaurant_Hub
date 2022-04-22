@@ -365,3 +365,12 @@ button {
        right: 239px;
        bottom: 69px
    }
+
+
+   /* OUTPUT */
+   #output {
+       text-align: center;
+       color: #495057;
+       background-color: #A5A58D;
+       height: 100%;
+   }
