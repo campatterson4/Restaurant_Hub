@@ -5,6 +5,7 @@ btn.addEventListener("click", dallasItalian$$);
 btn.addEventListener("click", dallasItalian$$$);
 btn.addEventListener("click", dallasItalian$$$$);
 btn.addEventListener("click", dallasAmerican$);
+btn.addEventListener("click", dallasAmerican$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -151,6 +152,26 @@ function dallasAmerican$() {
         alert('\n Go to Café 43! \n \n 2943 SMU Boulevard, Dallas, TX 75205 \n \n Hours: \n Mon-Sat: 11AM-2:30PM \n Sun: Closed')
     } else if (randomNumber === 4 && dallas.checked === true && american.checked === true && one.checked === true) {
         alert('\n Go to Circle Grill! \n \n 3701 N Buckner Boulevard, Dallas, TX 75228 \n \n Hours: \n Sun-Thurs: 7AM-3PM \n Fri-Sat: 7AM-9PM')
+    } else {
+        null
+    }
+};
+
+function dallasAmerican$$() {
+    const american = document.getElementById('american'); 
+    const two = document.getElementById('two');
+    const dallas = document.getElementById('dallas');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && dallas.checked === true && american.checked === true && two.checked === true) {
+        alert("\n Go to Doc B's! \n \n 2021 McKinney Avenue #190, Dallas, TX 75201 \n \n Hours: \n Mon-Thurs: 11AM-9PM \n Fri: 11AM-10PM \n Sat: 12PM-10PM \n Sun: Closed")
+    } else if (randomNumber === 2 && dallas.checked === true && american.checked === true && two.checked === true) {
+        alert('\n Go to The Henry! \n \n 2301 N Akard Street, Dallas, TX 75201 \n \n Hours: \n Sun-Thurs: 8AM-10PM \n Fri-Sat: 8AM-11PM')
+    } else if (randomNumber === 3 && dallas.checked === true && american.checked === true && two.checked === true) {
+        alert('\n Go to Hudson House! \n \n 4448 Lovers Lane, Dallas, TX 75225 \n \n Hours: \n Mon-Thurs: 11AM-9PM \n Fri: 11AM-10PM \n Sat: 10AM-10PM \n Sun: 10AM-9PM')
+    } else if (randomNumber === 4 && dallas.checked === true && american.checked === true && two.checked === true) {
+        alert('\n Go to HG Sply Co! \n \n 2008 Greenville Avenue, Dallas, TX 75206 \n \n Hours: \n Mon-Fri: 11AM-12AM \n Sat-Sun: 10AM-12AM')
     } else {
         null
     }
