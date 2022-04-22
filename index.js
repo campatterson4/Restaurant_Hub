@@ -66,13 +66,13 @@ function dallasItalian$() {
     const randomNumber = Math.floor(Math.random() * 5)
 
     if (randomNumber === 1 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert("\n Go to Roma's Pizza & Italian! \n \n 7033 Greenville Ave Suite 101, Dallas, TX 75231 \n Hours: Mon: Closed / Tues-Fri: 10AM-10:30PM")
+        alert("\n Go to Roma's Pizza & Italian! \n \n 7033 Greenville Ave Suite 101, Dallas, TX 75231 \n Hours: \n Mon: Closed \n Tues-Fri: 10AM-10:30PM")
     } else if (randomNumber === 2 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert('\n Go to Italia Express! \n \n 111 Continental Ave #300, Dallas, TX 75207 \n Hours: Mon-Fri: 10AM-10PM / Sat: 11AM-4PM / Sun: Closed') 
+        alert('\n Go to Italia Express! \n \n 111 Continental Ave #300, Dallas, TX 75207 \n Hours: \n Mon-Fri: 10AM-10PM \n Sat: 11AM-4PM \n Sun: Closed') 
     } else if (randomNumber === 3 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert("\n Go to Franki's Pizza & Pasta! \n \n 11722 Marsh Lane #202, Dallas, TX 75229 \n Hours: Mon-Thurs: 11AM-9:30PM / Fri-Sat: 11AM-10PM / Sun: 11AM-10PM")
+        alert("\n Go to Franki's Pizza & Pasta! \n \n 11722 Marsh Lane #202, Dallas, TX 75229 \n Hours: \n Mon-Thurs: 11AM-9:30PM \n Fri-Sat: 11AM-10PM \n Sun: 11AM-10PM")
     } else if(randomNumber === 4 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert('\n Go to Bellatrino Pizzeria! \n \n 920 S Harwood Street #120, Dallas, TX 75021 \n Hours: Mon-Sun: 11AM-7PM')
+        alert('\n Go to Bellatrino Pizzeria! \n \n 920 S Harwood Street #120, Dallas, TX 75021 \n Hours: \n Mon-Sun: 11AM-7PM')
     } else {
         null
     }
@@ -86,13 +86,13 @@ function dallasItalian$$() {
     const randomNumber = Math.floor(Math.random() * 5)
     
     if (randomNumber === 1 && dallas.checked === true && italian.checked === true && two.checked) {
-        alert('Go to Nonna!')
+        alert('\n Go to Nonna! \n \n 4115 Lomo Alto Drive, Dallas, TX 75219 \n Hours: \n Mon-Thurs: 5:30PM-9PM \n Fri: 11:30AM-2PM, 5:30PM-9:30PM \n Sat: 5:30PM-9:30PM \n Sun: Closed')
     } else if (randomNumber === 2 && dallas.checked === true && italian.checked === true && two.checked === true) {
-        alert('Go to North Italia!') 
+        alert('\n Go to North Italia! \n \n 2301 N Akard Street #280, Dallas, TX 75201 \n Hours: \n Mon-Thurs: 11AM-10PM \n Fri: 11AM-11PM \n Sat: 10AM-11PM \n Sun: 10AM-10PM') 
     } else if (randomNumber === 3 && dallas.checked === true && italian.checked === true && two.checked === true) {
-        alert('Go to Taverna!') 
+        alert('\n Go to Taverna! \n \n 3312 Knox Street, Dallas, TX 75205 \n Hours: \n Mon-Thurs: 11AM-10PM \n Fri: 11AM-11PM \n Sat: 10AM-11PM \n Sun: 10AM-10PM') 
     } else if (randomNumber === 4 && dallas.checked === true && italian.checked === true && two.checked === true) {
-        alert('Go to Amore Italian Restaurant!')
+        alert('\n Go to Amore Italian Restaurant! \n \n 6931 Snider Plaza, Dallas, TX 75205 \n Hours: \n Mon-Thurs: 11AM-9PM \n Fri: 11AM-10PM \n Sat: 5PM-10PM \n Sun: Closed')
     } else {
         null
     }
