@@ -146,13 +146,13 @@ function dallasAmerican$() {
     const randomNumber = Math.floor(Math.random() * 5)
 
     if (randomNumber === 1 && dallas.checked === true && american.checked === true && one.checked === true) {
-        alert("\n Go to Harvey B's! \n \n 4506 Columbia Avenue #100, Dallas, TX 75226 \n \n Hours: \n Mon-Thurs: 11AM-8PM \n Fri-Sat: 11AM-9PM \n Sun: 12PM-8PM")
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Harvey B's</u>!<br><br><br>4506 Columbia Avenue #100, Dallas, TX 75226<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-8PM<br>Fri-Sat: 11AM-9PM<br>Sun: 12PM-8PM"
     } else if (randomNumber === 2 && dallas.checked === true && american.checked === true && one.checked === true) {
-        alert("\n Go to Gator's Dallas! \n \n 1714 N Market Street, Dallas, TX 75202 \n \n Hours: \n Sun-Thurs: 12PM-10PM \n Fri-Sat: 12PM-1AM")
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Gator's Dallas</u>!<br><br><br>1714 N Market Street, Dallas, TX 75202<br><br><br>Hours:<br><br>Sun-Thurs: 12PM-10PM<br>Fri-Sat: 12PM-1AM"
     } else if (randomNumber === 3 && dallas.checked === true && american.checked === true && one.checked === true) {
-        alert('\n Go to Café 43! \n \n 2943 SMU Boulevard, Dallas, TX 75205 \n \n Hours: \n Mon-Sat: 11AM-2:30PM \n Sun: Closed')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Café 43</u>!<br><br><br>2943 SMU Boulevard, Dallas, TX 75205<br><br><br>Hours:<br><br>Mon-Sat: 11AM-2:30PM<br>Sun: Closed"
     } else if (randomNumber === 4 && dallas.checked === true && american.checked === true && one.checked === true) {
-        alert('\n Go to Circle Grill! \n \n 3701 N Buckner Boulevard, Dallas, TX 75228 \n \n Hours: \n Sun-Thurs: 7AM-3PM \n Fri-Sat: 7AM-9PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Circle Grill</u>!<br><br><br>3701 N Buckner Boulevard, Dallas, TX 75228<br><br><br>Hours:<br><br>Sun-Thurs: 7AM-3PM<br>Fri-Sat: 7AM-9PM"
     } else {
         null
     }
