@@ -19,6 +19,7 @@ btn.addEventListener("click", dallasSeafood$$$$);
 btn.addEventListener("click", dallasAsian$);
 btn.addEventListener("click", dallasAsian$$);
 btn.addEventListener("click", dallasAsian$$$);
+btn.addEventListener("click", dallasAsian$$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -444,6 +445,22 @@ function dallasAsian$$$() {
     } else if (randomNumber === 4 && dallas.checked === true && asian.checked === true && three.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Tei-An</u>!<br><br><br>1722 Routh Street #110, Dallas, TX 75201<br><br><br>Hours:<br><br>Mon&Sun: Closed<br>Tues-Thurs: 11:30AM-1:30PM, 6PM-9:30PM<br>Fri: 11:30AM-1:30PM, 5:30PM-9:30PM<br>Sat: 5:30PM-9:30PM"
     } else {
+        null
+    }
+};
+
+function dallasAsian$$$$() {
+    const asian = document.getElementById('asian'); 
+    const four = document.getElementById('four');
+    const dallas = document.getElementById('dallas'); 
+
+    const randomNumber = Math.floor(Math.random() * 3)
+
+    if (randomNumber === 1 && dallas.checked === true && asian.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Five Sixty by Wolfgang Puck</u>!<br><br><br>300 Reunion Tower Boulevard E, Dallas, TX 75207<br><br><br>Hours:<br><br>Sun-Thurs: 5PM-10PM<br>Fri-Sat: 5PM-11PM"
+    } else if (randomNumber === 2 && dallas.checked === true && asian.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Nobu Dallas</u>!<br><br><br>400 Crescent Court, Dallas, TX 75201<br><br><br>Hours:<br><br>Mon-Sun: 5PM-10PM"
+    }  else {
         null
     }
 };
