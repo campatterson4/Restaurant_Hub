@@ -21,6 +21,7 @@ btn.addEventListener("click", dallasAsian$$);
 btn.addEventListener("click", dallasAsian$$$);
 btn.addEventListener("click", dallasAsian$$$$);
 btn.addEventListener("click", fwItalian$);
+btn.addEventListener("click", fwItalian$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -483,6 +484,26 @@ function fwItalian$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Nikki's</u>!<br><br><br>2041 Rufe Snow Drive, Keller, TX 76248<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Sat: 11AM-9:30PM<br>Sun: 11AM-8:30PM"
     } else if (randomNumber === 5 && fw.checked === true && italian.checked === true && one.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Mamma Mia Italian Grill & Pizza</u>!<br><br><br>3124 E Belknap Street, Fort Worth, TX 76111<br><br><br>Hours:<br><br>Mon-Sat: 11AM-9:30PM<br>Sun: Closed"
+    } else {
+        null
+    }  
+};
+
+function fwItalian$$() {
+    const italian = document.getElementById('italian');
+    const two = document.getElementById('two');
+    const fw = document.getElementById('fort-worth')
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && italian.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Luigi's Italian Restaurant</u>!<br><br><br>4610 Western Center Boulevard #108, Fort Worth, TX 76137<br><br><br>Hours:<br><br>Weds-Mon: 3PM-11:30PM<br>Tues: Closed"
+    } else if (randomNumber === 2 && fw.checked === true && italian.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Macaluso's Italian Restaunt</u>!<br><br><br>2443 Forest Park Boulevard, Fort Worth, TX 76109<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Sun: 11AM-8PM"
+    } else if (randomNumber === 3 && fw.checked === true && italian.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Piola Italian Restaurant & Garden</u>!<br><br><br>3700 Mattison Avenue, Fort Worth, TX 76107<br><br><br>Hours:<br><br>Mon-Sat: 4:30PM-9PM<br>Sun: Closed"
+    } else if (randomNumber === 4 && fw.checked === true && italian.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Oliva Italian Eatery</u>!<br><br><br>12477 Timberland Boulevard #633, Fort Worth, TX 76244<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9PM<br>Fri: 11AM-10PM<br>Sat: 12PM-10PM"
     } else {
         null
     }  
