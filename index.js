@@ -15,6 +15,7 @@ btn.addEventListener("click", dallasMexican$$$$);
 btn.addEventListener("click", dallasSeafood$);
 btn.addEventListener("click", dallasSeafood$$);
 btn.addEventListener("click", dallasSeafood$$$);
+btn.addEventListener("click", dallasSeafood$$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -363,3 +364,24 @@ function dallasSeafood$$$() {
         null
     }
 };
+
+function dallasSeafood$$$$() {
+    const seafood = document.getElementById('seafood'); 
+    const four = document.getElementById('four');
+    const dallas = document.getElementById('dallas'); 
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && dallas.checked === true && seafood.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Ocean Prime</u>!<br><br><br>2101 Cedar Springs Road #150, Dallas, TX 75201<br><br><br>Hours:<br><br>Mon-Fri: 11:30AM-10PM<br>Sat: 4PM-10PM<br>Sun: 4PM-9PM"
+    } else if (randomNumber === 2 && dallas.checked === true && seafood.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Eddie V's Prime Seafood</u>!<br><br><br>4032 Oak Lawn Avenue Suite 100, Dallas, TX 75219<br><br><br>Hours:<br><br>Mon-Sat: 4PM-10PM<br>Sun: 4PM-9PM"
+    } else if (randomNumber === 3 && dallas.checked === true && seafood.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Al Biernat's</u>!<br><br><br>4217 Oak Lawn Avenue, Dallas, TX 75219<br><br><br>Hours:<br><br>Mon-Fri: 11AM-10PM<br>Sat: 11AM-2:30PM, 5PM-10PM<br>Sun: 11AM-2:30PM, 4:30PM-9PM"
+    } else if (randomNumber === 4 && dallas.checked === true && seafood.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>The Capital Grille</u>!<br><br><br>500 Crescent Court, Dallas, TX 75201<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9PM<br>Fri: 11AM-10PM<br>Sat: 5PM-10PM<br>Sun: 5PM-9PM"
+    } else {
+        null
+    }
+};
+
