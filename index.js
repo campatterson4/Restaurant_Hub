@@ -12,6 +12,7 @@ btn.addEventListener("click", dallasMexican$);
 btn.addEventListener("click", dallasMexican$$);
 btn.addEventListener("click", dallasMexican$$$);
 btn.addEventListener("click", dallasMexican$$$$);
+btn.addEventListener("click", dallasSeafood$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -296,6 +297,26 @@ function dallasMexican$$$$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Market Cocina</u>!<br><br><br>2510 McKinney Avenue, Dallas, TX 75201<br><br><br>Hours:<br><br>Mon-Sun: 8AM-8PM"
     } else if (randomNumber === 2 && dallas.checked === true && mexican.checked === true && four.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Javier's Gourmet Mexicano</u>!<br><br><br>4912 Cole Avenue, Dallas, TX 75205<br><br><br>Hours:<br><br>Sun-Weds: 5PM-10PM<br>Thurs: 5PM-10:30PM<br>Fri-Sat: 5PM-11PM"
+    } else {
+        null
+    }
+};
+
+function dallasSeafood$() {
+    const seafood = document.getElementById('seafood'); 
+    const one = document.getElementById('one');
+    const dallas = document.getElementById('dallas'); 
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && dallas.checked === true && seafood.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Seafood Connection</u>!<br><br><br>1427 E Illinois Avenue, Dallas, TX 75216<br><br><br>Hours:<br><br>Mon-Sat: 11AM-9PM<br>Sun: Closed"
+    } else if (randomNumber === 2 && dallas.checked === true && seafood.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>John's Seafood</u>!<br><br><br>4925 Bonnie View Road, Dallas, TX 75241<br><br><br>Hours:<br><br>Mon-Sat: 11AM-9PM<br>Sun: Closed"
+    } else if (randomNumber === 3 && dallas.checked === true && seafood.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Paradise Cajun Seafood</u>!<br><br><br>3636 Frankford Road Suite 300, Dallas, TX 75287<br><br><br>Hours:<br><br>Mon-Sat: 11AM-9PM<br>Sun: Closed"
+    } else if (randomNumber === 4 && dallas.checked === true && seafood.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>TJ Cajun Seafood & Wings</u>!<br><br><br>11306 Lyndon B Johnson Freeway #200, Dallas, TX 75238<br><br><br>Hours:<br><br>Mon-Thurs: 10:30AM-9PM<br>Fri-Sat: 10:30AM-9:30PM<br>Sun: 12PM-7PM"
     } else {
         null
     }
