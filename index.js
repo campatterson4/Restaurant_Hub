@@ -10,6 +10,8 @@ btn.addEventListener("click", dallasAmerican$$$);
 btn.addEventListener("click", dallasAmerican$$$$);
 btn.addEventListener("click", dallasMexican$);
 btn.addEventListener("click", dallasMexican$$);
+btn.addEventListener("click", dallasMexican$$$);
+btn.addEventListener("click", dallasMexican$$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -263,3 +265,38 @@ function dallasMexican$$() {
     }
 };
 
+function dallasMexican$$$() {
+    const mexican = document.getElementById('mexican'); 
+    const three = document.getElementById('three');
+    const dallas = document.getElementById('dallas'); 
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && dallas.checked === true && mexican.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Mesero - Victory Park</u>!<br><br><br>2375 Victory Park Lane Suite 180, Dallas, TX 75219<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9:30PM<br>Fri: 11AM-10:30PM<br>Sat: 10AM-10:30PM<br>Sun: 10AM-9:30PM"
+    } else if (randomNumber === 2 && dallas.checked === true && mexican.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>El Bolero</u>!<br><br><br>1201 Oak Lawn Avenue #160, Dallas, TX 75207<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-10PM<br>Fri: 11AM-11PM<br>Sat: 10AM-11PM<br>Sun: 10AM-10PM"
+    } else if (randomNumber === 3 && dallas.checked === true && mexican.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>El Ranchito</u>!<br><br><br>610 Jefferson Boulevard, Dallas, TX 75208<br><br><br>Hours:<br><br>Sun-Thurs: 10AM-9PM<br>Fri-Sat: 10AM-10PM"
+    } else if (randomNumber === 4 && dallas.checked === true && mexican.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Meso Maya Comida y Copas</u>!<br><br><br>1611 McKinney Avenue, Dallas, TX 75202<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-10PM<br>Fri-Sat: 11AM-11PM"
+    } else {
+        null
+    }
+};
+
+function dallasMexican$$$$() {
+    const mexican = document.getElementById('mexican'); 
+    const four = document.getElementById('four');
+    const dallas = document.getElementById('dallas'); 
+
+    const randomNumber = Math.floor(Math.random() * 3)
+
+    if (randomNumber === 1 && dallas.checked === true && mexican.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Market Cocina</u>!<br><br><br>2510 McKinney Avenue, Dallas, TX 75201<br><br><br>Hours:<br><br>Mon-Sun: 8AM-8PM"
+    } else if (randomNumber === 2 && dallas.checked === true && mexican.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Javier's Gourmet Mexicano</u>!<br><br><br>4912 Cole Avenue, Dallas, TX 75205<br><br><br>Hours:<br><br>Sun-Weds: 5PM-10PM<br>Thurs: 5PM-10:30PM<br>Fri-Sat: 5PM-11PM"
+    } else {
+        null
+    }
+};
