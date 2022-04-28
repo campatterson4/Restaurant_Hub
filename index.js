@@ -9,6 +9,7 @@ btn.addEventListener("click", dallasAmerican$$);
 btn.addEventListener("click", dallasAmerican$$$);
 btn.addEventListener("click", dallasAmerican$$$$);
 btn.addEventListener("click", dallasMexican$);
+btn.addEventListener("click", dallasMexican$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -241,3 +242,24 @@ function dallasMexican$() {
         null
     }
 };
+
+function dallasMexican$$() {
+    const mexican = document.getElementById('mexican'); 
+    const two = document.getElementById('two');
+    const dallas = document.getElementById('dallas');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && dallas.checked === true && mexican.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Mi Cocina</u>!<br><br><br>11661 Preston Road #138, Dallas, TX 75230<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-10PM<br>Fri-Sat: 11AM-11PM"
+    } else if (randomNumber === 2 && dallas.checked === true && mexican.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Pappasito's Cantina</u>!<br><br><br>10433 Lombardy Lane, Dallas, TX 75220<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9PM<br>Fri-Sat: 11AM-10PM"
+    } else if (randomNumber === 3 && dallas.checked === true && mexican.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Desperados Mexican Restaurant</u>!<br><br><br>4818 Greenville Avenue, Dallas, TX 75206<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9:30PM<br>Fri-Sat: 11AM-10:30PM<br>Sun: 11AM-9PM"
+    } else if (randomNumber === 4 && dallas.checked === true && mexican.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Jose</u>!<br><br><br>4931 W Lovers Lane, Dallas, TX 75209<br><br><br>Hours:<br><br>Sun-Tues: 11AM-9:30PM<br>Weds-Thurs: 11AM-10PM<br>Fri-Sat: 11AM-11PM"
+    } else {
+        null
+    }
+};
+
