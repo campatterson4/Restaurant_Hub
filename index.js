@@ -20,6 +20,7 @@ btn.addEventListener("click", dallasAsian$);
 btn.addEventListener("click", dallasAsian$$);
 btn.addEventListener("click", dallasAsian$$$);
 btn.addEventListener("click", dallasAsian$$$$);
+btn.addEventListener("click", fwItalian$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -463,4 +464,26 @@ function dallasAsian$$$$() {
     }  else {
         null
     }
+};
+
+function fwItalian$() {
+    const italian = document.getElementById('italian');
+    const one = document.getElementById('one');
+    const fw = document.getElementById('fort-worth')
+
+    const randomNumber = Math.floor(Math.random() * 6)
+
+    if (randomNumber === 1 && fw.checked === true && italian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Piada Italian Street Food</u>!<br><br><br>3300 Heritage Trace Parkway #100, Fort Worth, TX 76177<br><br><br>Hours:<br><br>Mon-Sun: 10:45AM-10PM"
+    } else if (randomNumber === 2 && fw.checked === true && italian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Joe's Pizza & Pasta</u>!<br><br><br>8645 N Beach Street, Fort Worth, TX 76244<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-10PM<br>Fri-Sat: 11AM-11PM<br>Sun: 11AM-9PM"
+    } else if (randomNumber === 3 && fw.checked === true && italian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Giovanni's Italian Kitchen</u>!<br><br><br>5733 Crowley Road, Fort Worth, TX 76134<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Fri: 4PM-9:45PM<br>Sat-Sun: 11AM-9:45PM"
+    } else if (randomNumber === 4 && fw.checked === true && italian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Nikki's</u>!<br><br><br>2041 Rufe Snow Drive, Keller, TX 76248<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Sat: 11AM-9:30PM<br>Sun: 11AM-8:30PM"
+    } else if (randomNumber === 5 && fw.checked === true && italian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Mamma Mia Italian Grill & Pizza</u>!<br><br><br>3124 E Belknap Street, Fort Worth, TX 76111<br><br><br>Hours:<br><br>Mon-Sat: 11AM-9:30PM<br>Sun: Closed"
+    } else {
+        null
+    }  
 };
