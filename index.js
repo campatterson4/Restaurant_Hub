@@ -14,6 +14,7 @@ btn.addEventListener("click", dallasMexican$$$);
 btn.addEventListener("click", dallasMexican$$$$);
 btn.addEventListener("click", dallasSeafood$);
 btn.addEventListener("click", dallasSeafood$$);
+btn.addEventListener("click", dallasSeafood$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -338,6 +339,26 @@ function dallasSeafood$$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Fish City Grill</u>!<br><br><br>7170 Skillman Street Suite 100, Dallas, TX 75231<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9:30PM<br>Fri-Sat: 11AM-10PM<br>Sun: 11AM-9PM"
     } else if (randomNumber === 4 && dallas.checked === true && seafood.checked === true && two.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Flying Fish</u>!<br><br><br>6126 Luther Lane, Dallas, TX 75225<br><br><br>Hours:<br><br>Sun-Thurs: 7AM-9:30PM<br>Fri-Sat: 7AM-10PM"
+    } else {
+        null
+    }
+};
+
+function dallasSeafood$$$() {
+    const seafood = document.getElementById('seafood'); 
+    const three = document.getElementById('three');
+    const dallas = document.getElementById('dallas'); 
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && dallas.checked === true && seafood.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Truluck's Ocean's Finest Seafood & Crab</u>!<br><br><br>2401 McKinney Avenue, Dallas, TX 75201<br><br><br>Hours:<br><br>Mon-Thurs: 11:30AM-2PM, 4:30PM-9PM<br>Fri: 11:30AM-2PM, 4:30PM-10PM<br>Sat: 4:30PM-10PM<br>Sun: 4:30PM-9PM"
+    } else if (randomNumber === 2 && dallas.checked === true && seafood.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>The Oceanaire Seafood Room</u>!<br><br><br>13340 Dallas Parkway, Dallas, TX 75240<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9PM<br>Fri-Sat: 5PM-10PM"
+    } else if (randomNumber === 3 && dallas.checked === true && seafood.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Montlake Cut</u>!<br><br><br>8220 Westchester Drive, Dallas, TX 75225<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Thurs: 5PM-10PM<br>Fri-Sat: 5PM-11PM<br>Sun: 5PM-9PM"
+    } else if (randomNumber === 4 && dallas.checked === true && seafood.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Pappadeaux's Seafood Kitchen</u>!<br><br><br>3520 Oak Lawn Avenue, Dallas, TX 75219<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9PM<br>Fri-Sat: 11AM-10PM"
     } else {
         null
     }
