@@ -16,6 +16,7 @@ btn.addEventListener("click", dallasSeafood$);
 btn.addEventListener("click", dallasSeafood$$);
 btn.addEventListener("click", dallasSeafood$$$);
 btn.addEventListener("click", dallasSeafood$$$$);
+btn.addEventListener("click", dallasAsian$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -385,3 +386,22 @@ function dallasSeafood$$$$() {
     }
 };
 
+function dallasAsian$() {
+    const asian = document.getElementById('asian'); 
+    const one = document.getElementById('one');
+    const dallas = document.getElementById('dallas'); 
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && dallas.checked === true && asian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Royal Wok</u>!<br><br><br>2560 Royal Lane Suite 100, Dallas, TX 75229<br><br><br>Hours:<br><br>Mon-Sun: 11AM-10PM"
+    } else if (randomNumber === 2 && dallas.checked === true && asian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Peking Kitchen</u>!<br><br><br>1710 Norman Drive, Dallas, TX 75211<br><br><br>Hours:<br><br>Sun-Thurs: 10AM-10PM<br>Fri-Sat: 10AM-10:30PM"
+    } else if (randomNumber === 3 && dallas.checked === true && asian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Mei Mei Chinese Buffet</u>!<br><br><br>10455 N Central Expressway #123, Dallas, TX 75231<br><br><br>Hours:<br><br>Mon-Sun: 11AM-9:30PM"
+    } else if (randomNumber === 4 && dallas.checked === true && asian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Kuai Asian Cafe</u>!<br><br><br>13710 Dallas Parkway G, Dallas, TX 75240<br><br><br>Hours:<br><br>Mon-Fri: 7:30AM-8PM<br>Sat: 8:30AM-6PM<br>Sun: Closed"
+    } else {
+        null
+    }
+};
