@@ -18,6 +18,7 @@ btn.addEventListener("click", dallasSeafood$$$);
 btn.addEventListener("click", dallasSeafood$$$$);
 btn.addEventListener("click", dallasAsian$);
 btn.addEventListener("click", dallasAsian$$);
+btn.addEventListener("click", dallasAsian$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -422,6 +423,26 @@ function dallasAsian$$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>May Dragon Chinese</u>!<br><br><br>4848 Belt Line Road, Dallas, TX 75254<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-10PM<br>Fri: 11AM-11PM<br>Sat: 12PM-11PM<br>Sun: 12PM-10PM"
     } else if (randomNumber === 4 && dallas.checked === true && asian.checked === true && two.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Royal China</u>!<br><br><br>6025 Royal Lane #201, Dallas, TX 75230<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-2:30PM, 4:30PM-9PM<br>Fri: 11AM-2:30PM, 4:30PM-9:30PM<br>Sat: 4:30PM-9:30PM"
+    } else {
+        null
+    }
+};
+
+function dallasAsian$$$() {
+    const asian = document.getElementById('asian'); 
+    const three = document.getElementById('three');
+    const dallas = document.getElementById('dallas'); 
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && dallas.checked === true && asian.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Shinsei Restaurant</u>!<br><br><br>7713 Inwood Road, Dallas, TX 75209<br><br><br>Hours:<br><br>Mon-Thurs: 5PM-10PM<br>Fri-Sat: 5PM-11PM<br>Sun: Closed"
+    } else if (randomNumber === 2 && dallas.checked === true && asian.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Uchi</u>!<br><br><br>2817 Maple Avenue, Dallas, TX 75201<br><br><br>Hours:<br><br>Sun-Thurs: 4PM-10PM<br>Fri-Sat: 4PM-11PM"
+    } else if (randomNumber === 3 && dallas.checked === true && asian.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Steel Sushi Restaurant & Lounge</u>!<br><br><br>3180 Welborn Street, Dallas, TX 75219<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Sun: 5:30PM-10PM"
+    } else if (randomNumber === 4 && dallas.checked === true && asian.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Tei-An</u>!<br><br><br>1722 Routh Street #110, Dallas, TX 75201<br><br><br>Hours:<br><br>Mon&Sun: Closed<br>Tues-Thurs: 11:30AM-1:30PM, 6PM-9:30PM<br>Fri: 11:30AM-1:30PM, 5:30PM-9:30PM<br>Sat: 5:30PM-9:30PM"
     } else {
         null
     }
