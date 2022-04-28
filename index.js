@@ -13,6 +13,7 @@ btn.addEventListener("click", dallasMexican$$);
 btn.addEventListener("click", dallasMexican$$$);
 btn.addEventListener("click", dallasMexican$$$$);
 btn.addEventListener("click", dallasSeafood$);
+btn.addEventListener("click", dallasSeafood$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -317,6 +318,26 @@ function dallasSeafood$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Paradise Cajun Seafood</u>!<br><br><br>3636 Frankford Road Suite 300, Dallas, TX 75287<br><br><br>Hours:<br><br>Mon-Sat: 11AM-9PM<br>Sun: Closed"
     } else if (randomNumber === 4 && dallas.checked === true && seafood.checked === true && one.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>TJ Cajun Seafood & Wings</u>!<br><br><br>11306 Lyndon B Johnson Freeway #200, Dallas, TX 75238<br><br><br>Hours:<br><br>Mon-Thurs: 10:30AM-9PM<br>Fri-Sat: 10:30AM-9:30PM<br>Sun: 12PM-7PM"
+    } else {
+        null
+    }
+};
+
+function dallasSeafood$$() {
+    const seafood = document.getElementById('seafood'); 
+    const two = document.getElementById('two');
+    const dallas = document.getElementById('dallas'); 
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && dallas.checked === true && seafood.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>The Boiling Crab</u>!<br><br><br>10560 Walnut Street #100, Dallas, TX 75243<br><br><br>Hours:<br><br>Mon-Fri: 3PM-10PM<br>Sat-Sun: 12PM-10PM"
+    } else if (randomNumber === 2 && dallas.checked === true && seafood.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Seafood Shack</u>!<br><br><br>11625 Webb Chapel Road, Dallas, TX 75229<br><br><br>Hours:<br><br>Mon-Fri: 11AM-10PM<br>Sat-Sun: 10:30AM-11PM"
+    } else if (randomNumber === 3 && dallas.checked === true && seafood.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Fish City Grill</u>!<br><br><br>7170 Skillman Street Suite 100, Dallas, TX 75231<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9:30PM<br>Fri-Sat: 11AM-10PM<br>Sun: 11AM-9PM"
+    } else if (randomNumber === 4 && dallas.checked === true && seafood.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Flying Fish</u>!<br><br><br>6126 Luther Lane, Dallas, TX 75225<br><br><br>Hours:<br><br>Sun-Thurs: 7AM-9:30PM<br>Fri-Sat: 7AM-10PM"
     } else {
         null
     }
