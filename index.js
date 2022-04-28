@@ -69,13 +69,13 @@ function dallasItalian$() {
     const randomNumber = Math.floor(Math.random() * 5)
 
     if (randomNumber === 1 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert("\n Go to Roma's Pizza & Italian! \n \n 7033 Greenville Ave Suite 101, Dallas, TX 75231 \n \n Hours: \n Mon: Closed \n Tues-Fri: 10AM-10:30PM")
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Roma's Pizza & Italian</u>!<br><br><br>7033 Greenville Ave Suite 101, Dallas, TX 75231<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Sun: 10AM-10:30PM"
     } else if (randomNumber === 2 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert('\n Go to Italia Express! \n \n 111 Continental Ave #300, Dallas, TX 75207 \n \n Hours: \n Mon-Fri: 10AM-10PM \n Sat: 11AM-4PM \n Sun: Closed') 
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Italia Express</u>!<br><br><br>111 Continental Ave #300, Dallas, TX 75207<br><br><br>Hours:<br><br>Mon-Fri: 10AM-10PM<br>Sat: 11AM-4PM<br>Sun: Closed"
     } else if (randomNumber === 3 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert("\n Go to Franki's Pizza & Pasta! \n \n 11722 Marsh Lane #202, Dallas, TX 75229 \n \n Hours: \n Mon-Thurs: 11AM-9:30PM \n Fri-Sat: 11AM-10PM \n Sun: 11AM-10PM")
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Franki's Pizza & Pasta</u>!<br><br><br>11722 Marsh Lane #202, Dallas, TX 75229<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9:30PM<br>Fri-Sat: 11AM-10PM<br>Sun: 11AM-10PM"
     } else if(randomNumber === 4 && dallas.checked === true && italian.checked && one.checked === true) {
-        alert('\n Go to Bellatrino Pizzeria! \n \n 920 S Harwood Street #120, Dallas, TX 75021 \n \n Hours: \n Mon-Sun: 11AM-7PM')
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Bellatrino Pizzeria</u>!<br><br><br>920 S Harwood Street #120, Dallas, TX 75021<br><br><br>Hours:<br><br>Mon-Sun: 11AM-7PM"
     } else {
         null
     }
