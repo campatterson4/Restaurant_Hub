@@ -31,6 +31,7 @@ btn.addEventListener("click", fwAmerican$$$$);
 btn.addEventListener("click", fwMexican$);
 btn.addEventListener("click", fwMexican$$);
 btn.addEventListener("click", fwMexican$$$);
+btn.addEventListener("click", fwMexican$$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -687,6 +688,22 @@ function fwMexican$$$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Maria's Mexican Kitchen</u>!<br><br><br>1712 S University Drive, Fort Worth, TX 76107<br><br><br>Hours:<br><br>Mon-Fri: 11AM-10PM<br>Sat: 10AM-10PM<br>Sun: 10AM-9PM"
     } else if (randomNumber === 3 && fw.checked === true && mexican.checked === true && three.checked == true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Market Cocina</u>!<br><br><br>3720 Vision Drive, Fort Worth, TX 76109<br><br><br>Hours:<br><br>Mon-Sun: 8AM-9PM"
+    } else {
+        null
+    }
+};
+
+function fwMexican$$$$() {
+    const mexican = document.getElementById('mexican');
+    const four = document.getElementById('four');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 3)
+
+    if (randomNumber === 1 && fw.checked === true && mexican.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Mesero</u>!<br><br><br>4955 Gage Avenue, Fort Worth, TX 76109<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9:30PM<br>Fri: 11AM-10:30PM<br>Sat: 10AM-10:30PM<br>Sun: 10AM-9:30PM"
+    } else if (randomNumber === 2 && fw.checked === true && mexican.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Reata</u>!<br><br><br>310 Houston Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-2:30PM, 5PM-8:30PM<br>Fri-Sat: 11AM-2:30PM, 5PM-9:30PM"
     } else {
         null
     }
