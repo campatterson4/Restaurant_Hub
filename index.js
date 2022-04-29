@@ -30,6 +30,7 @@ btn.addEventListener("click", fwAmerican$$$);
 btn.addEventListener("click", fwAmerican$$$$);
 btn.addEventListener("click", fwMexican$);
 btn.addEventListener("click", fwMexican$$);
+btn.addEventListener("click", fwMexican$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -668,6 +669,24 @@ function fwMexican$$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Los Vaqueros</u>!<br><br><br>2629 N Main Street, Fort Worth, TX 76164<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Thurs: 11AM-9PM<br>Fri-Sat: 11AM-10PM<br>Sun: 10:30AM-9PM"
     } else if (randomNumber === 4 && fw.checked === true && mexican.checked === true && two.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Lupe Tortilla</u>!<br><br><br>9409 N Freeway, Fort Worth, TX 76177<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9PM<br>Fri: 11AM-10PM<br>Sat: 9AM-10PM<br>Sun: 9AM-9PM"
+    } else {
+        null
+    }
+};
+
+function fwMexican$$$() {
+    const mexican = document.getElementById('mexican');
+    const three = document.getElementById('three');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 4)
+
+    if (randomNumber === 1 && fw.checked === true && mexican.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Toro Toro</u>!<br><br><br>200 Main Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-10PM<br>Fri-Sat: 11AM-11PM<br>Sun: 10AM-10PM"
+    } else if (randomNumber === 2 && fw.checked === true && mexican.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Maria's Mexican Kitchen</u>!<br><br><br>1712 S University Drive, Fort Worth, TX 76107<br><br><br>Hours:<br><br>Mon-Fri: 11AM-10PM<br>Sat: 10AM-10PM<br>Sun: 10AM-9PM"
+    } else if (randomNumber === 3 && fw.checked === true && mexican.checked === true && three.checked == true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Market Cocina</u>!<br><br><br>3720 Vision Drive, Fort Worth, TX 76109<br><br><br>Hours:<br><br>Mon-Sun: 8AM-9PM"
     } else {
         null
     }
