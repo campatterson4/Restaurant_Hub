@@ -29,6 +29,7 @@ btn.addEventListener("click", fwAmerican$$);
 btn.addEventListener("click", fwAmerican$$$);
 btn.addEventListener("click", fwAmerican$$$$);
 btn.addEventListener("click", fwMexican$);
+btn.addEventListener("click", fwMexican$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -647,6 +648,26 @@ function fwMexican$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Esperanza's Restaurant & Bakery</u>!<br><br><br>2122 N Main Street, Fort Worth, TX 76164<br><br><br>Hours:<br><br>Mon-Sun: 6:30AM-6:30PM"
     } else if (randomNumber === 4 && fw.checked === true && mexican.checked === true && one.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Salsa Limón</u>!<br><br><br>550 Throckmorton Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Sun-Thurs: 9AM-8PM<br>Fri-Sat: 9AM-9PM"
+    } else {
+        null
+    }
+};
+
+function fwMexican$$() {
+    const mexican = document.getElementById('mexican');
+    const two = document.getElementById('two');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && mexican.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Joe T. Garcia's</u>!<br><br><br>2201 N Commerce Street, Fort Worth, TX 76164<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-2:30PM, 5PM-10PM<br>Fri-Sat: 11AM-11PM<br>Sun: 11AM-10PM"
+    } else if (randomNumber === 2 && fw.checked === true && mexican.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Mi Cocina</u>!<br><br><br>9369 Rain Lily Trail, Fort Worth, TX 76177<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-10PM<br>Fri-Sat: 11AM-11PM"
+    } else if (randomNumber === 3 && fw.checked === true && mexican.checked === true && two.checked == true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Los Vaqueros</u>!<br><br><br>2629 N Main Street, Fort Worth, TX 76164<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Thurs: 11AM-9PM<br>Fri-Sat: 11AM-10PM<br>Sun: 10:30AM-9PM"
+    } else if (randomNumber === 4 && fw.checked === true && mexican.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Lupe Tortilla</u>!<br><br><br>9409 N Freeway, Fort Worth, TX 76177<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9PM<br>Fri: 11AM-10PM<br>Sat: 9AM-10PM<br>Sun: 9AM-9PM"
     } else {
         null
     }
