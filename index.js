@@ -23,6 +23,7 @@ btn.addEventListener("click", dallasAsian$$$$);
 btn.addEventListener("click", fwItalian$);
 btn.addEventListener("click", fwItalian$$);
 btn.addEventListener("click", fwItalian$$$);
+btn.addEventListener("click", fwItalian$$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -529,3 +530,19 @@ function fwItalian$$$() {
         null
     } 
 };
+
+function fwItalian$$$$() {
+    const italian = document.getElementById('italian');
+    const four = document.getElementById('four');
+    const fw = document.getElementById('fort-worth')
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && italian.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>il Modo</u>!<br><br><br>714 Main Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Sun-Thurs: 6:30AM-2PM, 5PM-9PM<br>Fri-Sat: 6:30AM-2PM, 5PM-10PM"
+    } else if (randomNumber === 2 && fw.checked === true && italian.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Calabrese Southlake</u>!<br><br><br>1281 E State Highway 114, Southlake, TX 76092<br><br><br>Hours:<br><br>Mon-Sun: 11AM-10PM"
+    } else {
+        null
+    } 
+}
