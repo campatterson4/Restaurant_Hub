@@ -24,6 +24,7 @@ btn.addEventListener("click", fwItalian$);
 btn.addEventListener("click", fwItalian$$);
 btn.addEventListener("click", fwItalian$$$);
 btn.addEventListener("click", fwItalian$$$$);
+btn.addEventListener("click", fwAmerican$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -472,7 +473,7 @@ function dallasAsian$$$$() {
 function fwItalian$() {
     const italian = document.getElementById('italian');
     const one = document.getElementById('one');
-    const fw = document.getElementById('fort-worth')
+    const fw = document.getElementById('fort-worth');
 
     const randomNumber = Math.floor(Math.random() * 6)
 
@@ -494,7 +495,7 @@ function fwItalian$() {
 function fwItalian$$() {
     const italian = document.getElementById('italian');
     const two = document.getElementById('two');
-    const fw = document.getElementById('fort-worth')
+    const fw = document.getElementById('fort-worth');
 
     const randomNumber = Math.floor(Math.random() * 5)
 
@@ -514,7 +515,7 @@ function fwItalian$$() {
 function fwItalian$$$() {
     const italian = document.getElementById('italian');
     const three = document.getElementById('three');
-    const fw = document.getElementById('fort-worth')
+    const fw = document.getElementById('fort-worth');
 
     const randomNumber = Math.floor(Math.random() * 5)
 
@@ -534,7 +535,7 @@ function fwItalian$$$() {
 function fwItalian$$$$() {
     const italian = document.getElementById('italian');
     const four = document.getElementById('four');
-    const fw = document.getElementById('fort-worth')
+    const fw = document.getElementById('fort-worth');
 
     const randomNumber = Math.floor(Math.random() * 5)
 
@@ -545,4 +546,24 @@ function fwItalian$$$$() {
     } else {
         null
     } 
-}
+};
+
+function fwAmerican$() {
+    const american = document.getElementById('american');
+    const one = document.getElementById('one');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && american.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Kincaid's Hamburgers</u>!<br><br><br>3124 Texas Sage Trail, Fort Worth, TX 76177<br><br><br>Hours:<br><br>Mon-Sat: 11AM-9PM<br>Sun: 11AM-7PM"
+    } else if (randomNumber === 2 && fw.checked === true && american.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Stevie's Diner</u>!<br><br><br>5500 N Tarrant Parkway #132, Fort Worth, TX 76244<br><br><br>Hours:<br><br>Mon-Sun: 7AM-2PM"
+    } else if (randomNumber === 3 && fw.checked === true && american.checked === true && one.checked == true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Love Shack</u>!<br><br><br>110 E Exchange Avenue, Fort Worth, TX 76164<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9PM<br>Fri-Sat: 11AM-10PM"
+    } else if (randomNumber === 4 && fw.checked === true && american.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>The Point on Lake Worth</u>!<br><br><br>1349 Bomber Road, Fort Worth, TX 76108<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-8PM<br>Fri-Sat: 11AM-9PM<br>Sun: 11AM-7PM"
+    } else {
+        null
+    }
+};
