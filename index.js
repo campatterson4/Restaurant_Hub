@@ -25,6 +25,7 @@ btn.addEventListener("click", fwItalian$$);
 btn.addEventListener("click", fwItalian$$$);
 btn.addEventListener("click", fwItalian$$$$);
 btn.addEventListener("click", fwAmerican$);
+btn.addEventListener("click", fwAmerican$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -563,6 +564,26 @@ function fwAmerican$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Love Shack</u>!<br><br><br>110 E Exchange Avenue, Fort Worth, TX 76164<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9PM<br>Fri-Sat: 11AM-10PM"
     } else if (randomNumber === 4 && fw.checked === true && american.checked === true && one.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>The Point on Lake Worth</u>!<br><br><br>1349 Bomber Road, Fort Worth, TX 76108<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-8PM<br>Fri-Sat: 11AM-9PM<br>Sun: 11AM-7PM"
+    } else {
+        null
+    }
+};
+
+function fwAmerican$$() {
+    const american = document.getElementById('american');
+    const two = document.getElementById('two');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && american.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Mash'D</u>!<br><br><br>2948 Crockett Street, Fort Worth, TX 76107<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9PM<br>Fri: 11AM-11PM<br>Sat: 9AM-11PM<br>Sun: 9AM-9PM"
+    } else if (randomNumber === 2 && fw.checked === true && american.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Doc B's Restaurant</u>!<br><br><br>5253 Marathon Avenue, Fort Worth, TX 76109<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9PM<br>Fri-Sat: 11AM-10PM"
+    } else if (randomNumber === 3 && fw.checked === true && american.checked === true && two.checked == true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Reservoir</u>!<br><br><br>1001 Foch Street, Fort Worth, TX 76107<br><br><br>Hours:<br><br>Mon-Fri: 3PM-2AM<br>Sat-Sun: 11AM-2AM"
+    } else if (randomNumber === 4 && fw.checked === true && american.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>HG Sply Co</u>!<br><br><br>1621 River Run #176, Fort Worth, TX 76107<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-10PM<br>Fri: 11AM-11PM<br>Sat: 10AM-11PM<br>Sun: 10AM-10PM"
     } else {
         null
     }
