@@ -28,6 +28,7 @@ btn.addEventListener("click", fwAmerican$);
 btn.addEventListener("click", fwAmerican$$);
 btn.addEventListener("click", fwAmerican$$$);
 btn.addEventListener("click", fwAmerican$$$$);
+btn.addEventListener("click", fwMexican$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -626,6 +627,26 @@ function fwAmerican$$$$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Del Frisco's Double Eagle Steakhouse</u>!<br><br><br>812 Main Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Mon-Thurs: 5PM-9PM<br>Fri: 5PM-10PM<br>Sat: 4PM-10PM<br>Sun: 4PM-9PM"
     } else if (randomNumber === 4 && fw.checked === true && american.checked === true && four.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Bob's Steak & Chop House</u>!<br><br><br>1300 Houston Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Mon-Thurs: 5PM-9PM<br>Fri-Sat: 5PM-10PM<br>Sun: Closed"
+    } else {
+        null
+    }
+};
+
+function fwMexican$() {
+    const mexican = document.getElementById('mexican');
+    const one = document.getElementById('one');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && mexican.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Cabrito Nuevo Leon Restaurant</u>!<br><br><br>1544 Ellis Avenue, Fort Worth, TX 76164<br><br><br>Hours:<br><br>Mon-Tues: Closed<br>Weds-Sun: 11AM-9PM"
+    } else if (randomNumber === 2 && fw.checked === true && mexican.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>El Paseo</u>!<br><br><br>5436 Jacksboro Highway, Fort Worth, TX 76114<br><br><br>Hours:<br><br>Mon: Closed<br>Tues-Sat: 11AM-9PM<br>Sun: 11AM-8PM"
+    } else if (randomNumber === 3 && fw.checked === true && mexican.checked === true && one.checked == true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Esperanza's Restaurant & Bakery</u>!<br><br><br>2122 N Main Street, Fort Worth, TX 76164<br><br><br>Hours:<br><br>Mon-Sun: 6:30AM-6:30PM"
+    } else if (randomNumber === 4 && fw.checked === true && mexican.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Salsa Limón</u>!<br><br><br>550 Throckmorton Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Sun-Thurs: 9AM-8PM<br>Fri-Sat: 9AM-9PM"
     } else {
         null
     }
