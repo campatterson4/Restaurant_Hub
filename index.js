@@ -22,6 +22,7 @@ btn.addEventListener("click", dallasAsian$$$);
 btn.addEventListener("click", dallasAsian$$$$);
 btn.addEventListener("click", fwItalian$);
 btn.addEventListener("click", fwItalian$$);
+btn.addEventListener("click", fwItalian$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -507,4 +508,24 @@ function fwItalian$$() {
     } else {
         null
     }  
+};
+
+function fwItalian$$$() {
+    const italian = document.getElementById('italian');
+    const three = document.getElementById('three');
+    const fw = document.getElementById('fort-worth')
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && italian.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Piccolo Mondo Italian Restaurant</u>!<br><br><br>829 E Lamar Boulevard, Arlington, TX 76011<br><br><br>Hours:<br><br>Mon-Thurs: 11:30AM-2PM, 5:30PM-9:30PM<br>Fri: 11:30AM-2PM, 5:30PM-10:30PM<br>Sat: 5:30PM-10:30PM<br>Sun: 5PM-9PM"
+    } else if (randomNumber === 2 && fw.checked === true && italian.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Ferrari's Italian Villa & Chop House</u>!<br><br><br>1200 William D Tate Avenue, Grapevine, TX 76051<br><br><br>Hours:<br><br>Mon-Thurs: 5PM-9:30PM<br>Fri-Sat: 5PM-10PM<br>Sun: 5PM-9PM"
+    } else if (randomNumber === 3 && fw.checked === true && italian.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Al Dente Italian Trattoria</u>!<br><br><br>910 Houston Street #110, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Mon-Tues: Closed<br>Weds: 4:30PM-8PM<br>Thurs: 4PM-8PM<br>Fri-Sat: 11AM-9PM<br>Sun: 12PM-7PM"
+    } else if (randomNumber === 4 && fw.checked === true && italian.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Brio Italian Grille</u>!<br><br><br>1431 Plaza Place, Southlake, TX 76092<br><br><br>Hours:<br><br>Mon-Sun: 11AM-10PM"
+    } else {
+        null
+    } 
 };
