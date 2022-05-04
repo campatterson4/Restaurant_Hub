@@ -36,6 +36,7 @@ btn.addEventListener("click", fwSeafood$);
 btn.addEventListener("click", fwSeafood$$);
 btn.addEventListener("click", fwSeafood$$$);
 btn.addEventListener("click", fwSeafood$$$$);
+btn.addEventListener("click", fwAsian$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -784,6 +785,26 @@ function fwSeafood$$$$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Del Frisco's Double Eagle Steakhouse</u>!<br><br><br>812 Main Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Mon: 5PM-9PM<br>Tues-Thurs: 5PM-10PM<br>Fri: 5PM-11PM<br>Sat: 4PM-11PM<br>Sun:11AM-9PM"
     } else if (randomNumber === 3 && fw.checked === true && seafood.checked === true && four.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Eddie V's Prime Seafood</u>!<br><br><br>3100 W 7th Street, Fort Worth, TX 76107<br><br><br>Hours:<br><br>Mon-Thurs: 4PM-10PM<br>Fri-Sat: 4PM-11PM<br>Sun: 11AM-9PM"
+    } else {
+        null
+    }
+};
+
+function fwAsian$() {
+    const asian = document.getElementById('asian');
+    const one = document.getElementById('one');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && asian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Taste of Asia</u>!<br><br><br>7420 N Beach Street #250, Fort Worth, TX 76137<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9PM<br>Fri-Sat: 11AM-10PM"
+    } else if (randomNumber === 2 && fw.checked === true && asian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Tom's Asian Bistro</u>!<br><br><br>2977 S Precinct Line Road, Fort Worth, TX 76118<br><br><br>Hours:<br><br>Mon-Sun: 10AM-10PM"
+    } else if (randomNumber === 3 && fw.checked === true && asian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>China One Xpress</u>!<br><br><br>6612 Brentwood Stair Road #100, Fort Worth, TX 76112<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-10PM<br>Fri-Sat: 11AM-10:30PM<br>Sun: 11AM-9PM"
+    } else if (randomNumber === 4 && fw.checked === true && asian.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Asian Gourmet</u>!<br><br><br>1550 Eastchase Parkway, Fort Worth, TX 76120<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9:30PM<br>Fri-Sat: 11AM-10PM<br>Sun: Closed"
     } else {
         null
     }
