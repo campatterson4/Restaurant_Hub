@@ -32,6 +32,7 @@ btn.addEventListener("click", fwMexican$);
 btn.addEventListener("click", fwMexican$$);
 btn.addEventListener("click", fwMexican$$$);
 btn.addEventListener("click", fwMexican$$$$);
+btn.addEventListener("click", fwSeafood$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -704,6 +705,26 @@ function fwMexican$$$$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Mesero</u>!<br><br><br>4955 Gage Avenue, Fort Worth, TX 76109<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9:30PM<br>Fri: 11AM-10:30PM<br>Sat: 10AM-10:30PM<br>Sun: 10AM-9:30PM"
     } else if (randomNumber === 2 && fw.checked === true && mexican.checked === true && four.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Reata</u>!<br><br><br>310 Houston Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-2:30PM, 5PM-8:30PM<br>Fri-Sat: 11AM-2:30PM, 5PM-9:30PM"
+    } else {
+        null
+    }
+};
+
+function fwSeafood$() {
+    const seafood = document.getElementById('seafood');
+    const one = document.getElementById('one');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && seafood.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Dan's Seafood & Chicken</u>!<br><br><br>6719 Bridge Street, Fort Worth, TX 76112<br><br><br>Hours:<br><br>Mon-Sat: 10:30AM-9PM<br>Sun: Closed"
+    } else if (randomNumber === 2 && fw.checked === true && seafood.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Crawfish 7</u>!<br><br><br>5302 E Belknap Street, Fort Worth, TX 76117<br><br><br>Hours:<br><br>Mon, Weds-Sun: 9:30AM-8PM<br>Tues: Closed"
+    } else if (randomNumber === 3 && fw.checked === true && seafood.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Captain D's</u>!<br><br><br>8514 Highway 80 W, Fort Worth, TX 76116<br><br><br>Hours:<br><br>Mon-Sun: 10:30AM-10PM"
+    } else if (randomNumber === 4 && fw.checked === true && seafood.checked === true && one.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Don's Seafood</u>!<br><br><br>5109 Wichita Street, Fort Worth, TX 76119<br><br><br>Hours:<br><br>Mon-Thurs: 10AM-9PM<br>Fri-Sat: 10AM-10PM<br>Sun: Closed"
     } else {
         null
     }
