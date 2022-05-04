@@ -39,6 +39,7 @@ btn.addEventListener("click", fwSeafood$$$$);
 btn.addEventListener("click", fwAsian$);
 btn.addEventListener("click", fwAsian$$);
 btn.addEventListener("click", fwAsian$$$);
+btn.addEventListener("click", fwAsian$$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -843,6 +844,22 @@ function fwAsian$$$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>HK Sushi</u>!<br><br><br>6801 Rufe Snow Drive #100, Watauga, TX 76148<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9PM<br>Fri: 11AM-10PM<br>Sat: 11:30AM-10PM<br>Sun: 11:30AM-9PM"
     } else if (randomNumber === 2 && fw.checked === true && asian.checked === true && three.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Kyodai Handroll Bar</u>!<br><br><br>2825 Heritage Trace Parkway, Fort Worth, TX 76177<br><br><br>Hours:<br><br>Mon & Weds-Sat: 11AM-2:30PM, 5PM-10PM<br>Tues: Closed<br>Sun: 12PM-2:30PM, 5PM-9PM"
+    } else {
+        null
+    }
+};
+
+function fwAsian$$$$() {
+    const asian = document.getElementById('asian');
+    const four = document.getElementById('four');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && asian.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Takara Japanese Steakhouse</u>!<br><br><br>7536 26 Boulevard, North Richland Hills, TX 76180<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9PM<br>Fri: 11AM-10PM<br>Sat: 11:30AM-10PM<br>Sun: 11:30AM-9PM"
+    } else if (randomNumber === 2 && fw.checked === true && asian.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Akarii Revolving Sushi</u>!<br><br><br>3341 E Broad Street #101, Mansfield, TX 76063<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9:30PM<br>Fri-Sat: 11AM-10:30PM"
     } else {
         null
     }
