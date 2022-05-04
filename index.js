@@ -33,6 +33,7 @@ btn.addEventListener("click", fwMexican$$);
 btn.addEventListener("click", fwMexican$$$);
 btn.addEventListener("click", fwMexican$$$$);
 btn.addEventListener("click", fwSeafood$);
+btn.addEventListener("click", fwSeafood$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -725,6 +726,26 @@ function fwSeafood$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Captain D's</u>!<br><br><br>8514 Highway 80 W, Fort Worth, TX 76116<br><br><br>Hours:<br><br>Mon-Sun: 10:30AM-10PM"
     } else if (randomNumber === 4 && fw.checked === true && seafood.checked === true && one.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Don's Seafood</u>!<br><br><br>5109 Wichita Street, Fort Worth, TX 76119<br><br><br>Hours:<br><br>Mon-Thurs: 10AM-9PM<br>Fri-Sat: 10AM-10PM<br>Sun: Closed"
+    } else {
+        null
+    }
+};
+
+function fwSeafood$$() {
+    const seafood = document.getElementById('seafood');
+    const two = document.getElementById('two');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && seafood.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>The Crab Station</u>!<br><br><br>2701 Bello, Jean Hills Lane #131, Fort Worth, TX 76177<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9:30PM<br>Fri-Sat: 11AM-10PM"
+    } else if (randomNumber === 2 && fw.checked === true && seafood.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Texas Pit Oyster Bar</u>!<br><br><br>3349 Western Center Boulevard, Fort Worth, TX 76137<br><br><br>Hours:<br><br>Sun-Weds: 11AM-9PM<br>Thurs-Sat: 11AM-10PM"
+    } else if (randomNumber === 3 && fw.checked === true && seafood.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Drunken Crab</u>!<br><br><br>2423 Clinton Avenue, Fort Worth, TX 76164<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-10PM<br>Fri-Sat: 11AM-11PM"
+    } else if (randomNumber === 4 && fw.checked === true && seafood.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Flying Fish</u>!<br><br><br>2913 Montgomery Street, Fort Worth, TX 76107<br><br><br>Hours:<br><br>Mon-Sun: 11AM-10PM"
     } else {
         null
     }
