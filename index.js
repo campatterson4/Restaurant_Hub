@@ -34,6 +34,7 @@ btn.addEventListener("click", fwMexican$$$);
 btn.addEventListener("click", fwMexican$$$$);
 btn.addEventListener("click", fwSeafood$);
 btn.addEventListener("click", fwSeafood$$);
+btn.addEventListener("click", fwSeafood$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -746,6 +747,24 @@ function fwSeafood$$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Drunken Crab</u>!<br><br><br>2423 Clinton Avenue, Fort Worth, TX 76164<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-10PM<br>Fri-Sat: 11AM-11PM"
     } else if (randomNumber === 4 && fw.checked === true && seafood.checked === true && two.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Flying Fish</u>!<br><br><br>2913 Montgomery Street, Fort Worth, TX 76107<br><br><br>Hours:<br><br>Mon-Sun: 11AM-10PM"
+    } else {
+        null
+    }
+};
+
+function fwSeafood$$$() {
+    const seafood = document.getElementById('seafood');
+    const three = document.getElementById('three');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 4)
+
+    if (randomNumber === 1 && fw.checked === true && seafood.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Krab Kingz</u>!<br><br><br>5250 N Tarrant Parkway, Fort Worth, TX 76137<br><br><br>Hours:<br><br>Mon&Sun: 1PM-9PM<br>Tues-Thurs: 12PM-10PM<br>Fri-Sat: 12PM-12AM"
+    } else if (randomNumber === 2 && fw.checked === true && seafood.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Pappadeaux Seafood Kitchen</u>!<br><br><br>2708 West Freeway, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9PM<br>Fri-Sat: 11AM-10PM<br>Sun: 10AM-9PM"
+    } else if (randomNumber === 3 && fw.checked === true && seafood.checked === true && three.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Waters Restaurant</u>!<br><br><br>301 Main Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Mon&Sun: Closed<br>Tues-Sat: 4PM-9PM"
     } else {
         null
     }
