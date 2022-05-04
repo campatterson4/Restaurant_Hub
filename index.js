@@ -37,6 +37,7 @@ btn.addEventListener("click", fwSeafood$$);
 btn.addEventListener("click", fwSeafood$$$);
 btn.addEventListener("click", fwSeafood$$$$);
 btn.addEventListener("click", fwAsian$);
+btn.addEventListener("click", fwAsian$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -805,6 +806,26 @@ function fwAsian$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>China One Xpress</u>!<br><br><br>6612 Brentwood Stair Road #100, Fort Worth, TX 76112<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-10PM<br>Fri-Sat: 11AM-10:30PM<br>Sun: 11AM-9PM"
     } else if (randomNumber === 4 && fw.checked === true && asian.checked === true && one.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Asian Gourmet</u>!<br><br><br>1550 Eastchase Parkway, Fort Worth, TX 76120<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9:30PM<br>Fri-Sat: 11AM-10PM<br>Sun: Closed"
+    } else {
+        null
+    }
+};
+
+function fwAsian$$() {
+    const asian = document.getElementById('asian');
+    const two = document.getElementById('two');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 5)
+
+    if (randomNumber === 1 && fw.checked === true && asian.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>P.F. Chang's</u>!<br><br><br>400 Throckmorton Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Mon-Sun: 11AM-10PM"
+    } else if (randomNumber === 2 && fw.checked === true && asian.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Green Tea House</u>!<br><br><br>3400 Texas Sage Trail #116, Fort Worth, TX 76177<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9:30PM<br>Fri-Sat: 11AM-10PM"
+    } else if (randomNumber === 3 && fw.checked === true && asian.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Szechuan</u>!<br><br><br>5712 Locke Avenue, Fort Worth, TX 76107<br><br><br>Hours:<br><br>Mon-Sun: 11AM-9PM"
+    } else if (randomNumber === 4 && fw.checked === true && asian.checked === true && two.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Pei Wei Asian Kitchen</u>!<br><br><br>2901 Heritage Trace Parkway, Fort Worth, TX 76177<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-8PM<br>Fri-Sat: 11AM-8:30PM"
     } else {
         null
     }
