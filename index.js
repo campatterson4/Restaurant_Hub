@@ -35,6 +35,7 @@ btn.addEventListener("click", fwMexican$$$$);
 btn.addEventListener("click", fwSeafood$);
 btn.addEventListener("click", fwSeafood$$);
 btn.addEventListener("click", fwSeafood$$$);
+btn.addEventListener("click", fwSeafood$$$$);
 
 // Taking Input from Radio Buttons 
 function valid() {
@@ -765,6 +766,24 @@ function fwSeafood$$$() {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Pappadeaux Seafood Kitchen</u>!<br><br><br>2708 West Freeway, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Mon-Thurs: 11AM-9PM<br>Fri-Sat: 11AM-10PM<br>Sun: 10AM-9PM"
     } else if (randomNumber === 3 && fw.checked === true && seafood.checked === true && three.checked === true) {
         document.getElementById('output').innerHTML="<br><br><br>Go to <u>Waters Restaurant</u>!<br><br><br>301 Main Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Mon&Sun: Closed<br>Tues-Sat: 4PM-9PM"
+    } else {
+        null
+    }
+};
+
+function fwSeafood$$$$() {
+    const seafood = document.getElementById('seafood');
+    const four = document.getElementById('four');
+    const fw = document.getElementById('fort-worth');
+
+    const randomNumber = Math.floor(Math.random() * 4)
+
+    if (randomNumber === 1 && fw.checked === true && seafood.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>The Capital Grille</u>!<br><br><br>800 Main Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Sun-Thurs: 11AM-9PM<br>Fri: 11AM-10PM<br>Sat: 4PM-10PM"
+    } else if (randomNumber === 2 && fw.checked === true && seafood.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Del Frisco's Double Eagle Steakhouse</u>!<br><br><br>812 Main Street, Fort Worth, TX 76102<br><br><br>Hours:<br><br>Mon: 5PM-9PM<br>Tues-Thurs: 5PM-10PM<br>Fri: 5PM-11PM<br>Sat: 4PM-11PM<br>Sun:11AM-9PM"
+    } else if (randomNumber === 3 && fw.checked === true && seafood.checked === true && four.checked === true) {
+        document.getElementById('output').innerHTML="<br><br><br>Go to <u>Eddie V's Prime Seafood</u>!<br><br><br>3100 W 7th Street, Fort Worth, TX 76107<br><br><br>Hours:<br><br>Mon-Thurs: 4PM-10PM<br>Fri-Sat: 4PM-11PM<br>Sun: 11AM-9PM"
     } else {
         null
     }
