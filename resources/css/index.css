@@ -290,7 +290,7 @@ button {
    .price .price-border1 {
        position: relative;
        width: 15%;
-       right: 76%;
+       right: 72%;
        bottom: 227px
    }
 
@@ -304,23 +304,23 @@ button {
    .price .price-border3 {
        position: relative;
        transform: rotate(90deg);
-       width: 100%;
+       width: 93%;
        bottom: 90px;
-       left: 1.5%;
+       left: 1.3%;
    }
 
    .price .price-border4 {
        position: relative;
-       width: 84.6%;
+       width: 81%;
        top: 57px;
-       right: 41%
+       right: 39%
    }
 
    .price .price-border5 {
        position: relative;
        transform: rotate(90deg);
-       width: 100%;
-       right: 264px;
+       width: 93.6%;
+       right: 269px;
        bottom: 113px
    }
 
