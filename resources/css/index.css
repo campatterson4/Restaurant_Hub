@@ -327,7 +327,7 @@ button {
    .location .location-border1 {
        position: relative;
        bottom: 140px;
-       right: 207px;
+       right: 218px;
    }
 
    .location .location-border2 {
@@ -339,30 +339,30 @@ button {
    .location .location-border3 {
        position: relative;
        transform: rotate(90deg);
-       width: 80%;
+       width: 75%;
        bottom: 35.7px;
-       left: 29px;
+       left: 30px;
    }
 
    .location .location-border4 {
        position: relative;
-       width: 19%;
+       width: 22%;
        top: 79px;
-       right: 2px;
+       right: 7px;
    }
 
    .location .location-border5 {
        position: relative;
-       width: 21%;
+       width: 17%;
        top: 68px;
-       right: 206px;
+       right: 223px;
    }
 
    .location .location-border6 {
        position: relative;
        transform: rotate(90deg);
-       width: 80%;
-       right: 239px;
+       width: 75%;
+       right: 252px;
        bottom: 69px
    }
 
