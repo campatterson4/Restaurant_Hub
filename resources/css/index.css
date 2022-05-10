@@ -267,24 +267,24 @@ button {
    .cuisine .cuisine-border3 {
        position: relative;
        transform: rotate(90deg);
-       width: 100%;
+       width: 93.6%;
        bottom: 126px;
-       left: 18.3px;
+       left: 21.5px;
    }
    
    .cuisine .cuisine-border4 {
        position: relative;
-       width: 78%;
-       right: 105px;
-       top: 21px;
+       width: 78.6%;
+       right: 111px;
+       top: 22px;
    }
 
    .cuisine .cuisine-border5 {
        position: relative;
        transform: rotate(90deg);
-       width: 100%;
-       right: 228px;
-       bottom: 149px;
+       width: 94%;
+       right: 244px;
+       bottom: 148px;
    }
 
    .price .price-border1 {
