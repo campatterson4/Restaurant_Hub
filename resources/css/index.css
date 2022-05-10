@@ -226,7 +226,7 @@ input[type='radio']:checked:after {
 /* Submit Button */
 button {
     position: relative;
-    left: 158px;
+    left: 165px;
     bottom: 125px;
     background: #CB997E;
     font-family: inherit;
@@ -353,9 +353,9 @@ button {
 
    .location .location-border5 {
        position: relative;
-       width: 17%;
+       width: 21%;
        top: 68px;
-       right: 223px;
+       right: 216px;
    }
 
    .location .location-border6 {
